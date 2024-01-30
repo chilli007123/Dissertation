@@ -39,6 +39,9 @@ As discussed in section 1 above, as windows holds a majority share in the market
 The impact of these tools regarding AV detection is continuously altering, and therefore the environment is rapidly changing. With plenty of innovations from both attackers and defenders, it is difficult to produce long lasting solutions.
 
 TODO:  Add a scection with some CITED research, discussing how many virus are creates,  how much money is lost, different techinques for detection vs exasion etc.  What you need to do here is sell why this is important.
+Up-to-date sources indicate that "560,000 new pieces of malware are detected everyday" (Bojan Jovanovic, 2023). With this huge number of potentially 0-day viruses being created everyday, there is no way that antivirus software can keep up block all these threats before they infect multiple machines. 
+
+(Bojan Jovanovic, 2023) Also says that "Every minute, four companies fall victim to ransomware attacks" This relates nicely to (Marika Samarati, 2017) report on how much cyber crime cost the UK in 2016, "Although ransomware ranked last in terms of the number of organisations affected (388,858), it ranked first in terms of financial losses (£7,356,060,699)"
 
 Antivirus software is arguably one of the most important processes on our computers, blocking internal and external threats, it protects our computers from malicious 
 users. My projects will be important to the blue and red teams within cybersecurity. With greater knowledge on how antivirus systems cope with different forms of 
