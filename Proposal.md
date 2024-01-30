@@ -5,7 +5,7 @@ Supervisor: Dr Daniel Goldsmith
 
 # Project Topic:
 
-*Overall good backgound to the topic, gives nice context*
+*Overall good background to the topic, gives nice context*
 
 Within the cyber world there is a constant battle between virus and antivirus software. Due to computers evolving at an exponential rate, so are the techniques of virus development and mitigation. 
 I want to understand the extent to which the stock antivirus system Windows Defender is able to prevent malicious executables from being run on a stock windows machine. 
@@ -20,7 +20,7 @@ of potential viruses.
 
 ## Overview of solution:
 
-There are several off the shelf tools available for generating virus, and evading detection by AV systems.
+There are several off the shelf tools available for generating viruses, and evading detection of AV systems.
 To help AV developers understand the implications of these tools, they need to be able to evaluate the impact on AV detection rates.
 
 The project will be based on experimentation, I will feed a windows computer different versions of a virus or exploit and record two variables. Firstly, 
@@ -38,7 +38,6 @@ After drawing these results I’ll be able to suggest techniques that could be i
 As discussed in section 1 above, as windows holds a majority share in the market when it comes to computers, there are a range of tools that can be used to create effective viruses.
 The impact of these tools regarding AV detection is continuously altering, and therefore the environment is rapidly changing. With plenty of innovations from both attackers and defenders, it is difficult to produce long lasting solutions.
 
-#### *TODO:  Add a section with some CITED research, discussing how many virus are creates,  how much money is lost, different techniques for detection vs evasion etc.*  What you need to do here is sell why this is important.
 Up-to-date sources indicate that "560,000 new pieces of malware are detected everyday" (Bojan Jovanovic, 2023). With this huge number of potentially 0-day viruses being created everyday, there is no way that antivirus software can keep up block all these threats before they infect multiple machines. 
 
 (Bojan Jovanovic, 2023) Also says that "Every minute, four companies fall victim to ransomware attacks" This relates nicely to (Marika Samarati, 2017) report on how much cyber crime cost the UK in 2016, "Although ransomware ranked last in terms of the number of organisations affected (388,858), it ranked first in terms of financial losses (£7,356,060,699)". These statistics show us that more resources need to dedicated into researching the techniques that attackers used to produce malware. After understanding why antivirus is evaded we will then be able to mitigate the impact of readily available tools and protect our computers. The reason so many organisations were effected is due to evasion techniques such as obfuscation and cryptography. Encoding and changing the structure of the payload will bypass certain detection techniques such as signature based scanning and potentially heuristic based scanning depending on the severity of the obfuscation. Also techniques such as polymorphic code will allow code to be changed every time the program is run, further evading antivirus by constantly changing its signature.
@@ -47,7 +46,8 @@ Antivirus software is arguably one of the most important processes on our comput
 users. My projects will be important to the blue and red teams within cybersecurity. With greater knowledge on how antivirus systems cope with different forms of 
 evasion, will ensure that new protections are put in place to further secure devices. Also, I'm positive that my research will also benefit individual users who have little
 knowledge around cyber threats. Reasoning for this is because by demonstrating the different ways in which a virus can come it will encourage users to be more cautious when
-opening a file from an unsigned source. Furthermore, antivirus developers will be able to use my research to locate the flaws in any existing products. If a certain technique used gauarentees a
+opening a file from an unsigned source. Furthermore, antivirus developers will be able to use my research to locate the flaws in any existing products. If a certain technique used guarantees antivirus evasion then developers will be 
+able to rectify any mistakes.
 
 ## Project Plan:
 
