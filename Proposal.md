@@ -1,8 +1,7 @@
-To what extent can Windows Defender detect malicious code where evasion techniques are used?
+## To what extent can Windows Defender detect malicious code where evasion techniques are used?
 
 Student: Charles Graham
 Supervisor: Dr Daniel Goldsmith
-
 
 # Project Topic:
 
@@ -12,13 +11,12 @@ Within the cyber world there is a constant battle between virus and antivirus so
 I want to understand the extent to which the stock antivirus system Windows Defender is able to prevent malicious executables from being run on a stock windows machine. 
 With this data I will be able to conclude how effective Windows Defender is when different forms of evasion are used.  
 
-This research will focus on evaluating the effectivness of differnt virus creation tools for windows 10
+This research will focus on evaluating the effectiveness of different virus creation tools for windows 10
 The reason I have chosen to focus on this operating system is due to the market share in operating systems with Windows holding a substantial percentage. 
-"As of December 2020, over 76% of all computers worldwide were running some version of windows" (Andra zaharia, 2024).
+"As of December 2020, over 76% of all computers worldwide were running some version of windows" (Andra Zaharia, 2024).
 Having such a large share in the market means that an attacker’s priority when trying to infect a machine is mainly aimed at a windows machine, by evaluating the 
 effectiveness of Windows defender we will be able to understand the possible future mitigations to be put in place so that all devices are protected from a multitude 
 of potential viruses.
-
 
 ## Overview of solution:
 
@@ -32,7 +30,7 @@ The results of experimentation will be used to create a report, discussing the c
 
 These viruses will be created by using various readily available tools online and also by original python code create by myself. As different viruses will be given to the machine I expect that most will be detected 
 but some will fly under the radar of the antivirus. Hence my results will be drawn as a percentage of viruses that were detected, and the ones that escaped detection 
-will be discussed as to why they succeeded in not being detected. Additionally, certain evasion techniques may help avoid detecion, but also effect the execution of the virus (THIS NEEDS BETTER WORDS)
+will be discussed as to why they succeeded in not being detected. Additionally, certain evasion techniques may help avoid detection, but unfortunately leave the virus broken due to being encoded or mangled too harshly.
 After drawing these results I’ll be able to suggest techniques that could be implemented to further protect machines, or if I’m unable to produce a virus that evaded Windows defender then ill discuss the potential reasons why it was detected.
 
 ## Audience and Motivation:
