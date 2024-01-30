@@ -36,7 +36,7 @@ After drawing these results I’ll be able to suggest techniques that could be i
 ## Audience and Motivation:
 
 As discussed in section 1 above, as windows holds a majority share in the market when it comes to computers, there are a range of tools that can be used to create effective viruses.
-The impact of these tools on AV detection is continuously altering, and the environment is rapidly changing. With plenty of innovations from both attackers and defenders, it is difficult to produce long lasting solutions.
+The impact of these tools regarding AV detection is continuously altering, and therefore the environment is rapidly changing. With plenty of innovations from both attackers and defenders, it is difficult to produce long lasting solutions.
 
 TODO:  Add a scection with some CITED research, discussing how many virus are creates,  how much money is lost, different techinques for detection vs exasion etc.  What you need to do here is sell why this is important.
 
