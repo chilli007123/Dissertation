@@ -12,8 +12,9 @@ Within the cyber world there is a constant battle between virus and antivirus so
 I want to understand the extent to which the stock antivirus system Windows Defender is able to prevent malicious executables from being run on a stock windows machine. 
 With this data I will be able to conclude how effective Windows Defender is when different forms of evasion are used.  
 
-This research will focus on the *evaluation of the effectivness of differnt virus creation tools for windows 10*
-The reason I have chosen to focus on this operating system is due to the market share in operating systems with Windows holding 69.2% of the share. 
+This research will focus on evaluating the effectivness of differnt virus creation tools for windows 10
+The reason I have chosen to focus on this operating system is due to the market share in operating systems with Windows holding a substantial percentage. 
+"As of December 2020, over 76% of all computers worldwide were running some version of windows" (Andra zaharia, 2024).
 Having such a large share in the market means that an attacker’s priority when trying to infect a machine is mainly aimed at a windows machine, by evaluating the 
 effectiveness of Windows defender we will be able to understand the possible future mitigations to be put in place so that all devices are protected from a multitude 
 of potential viruses.
