@@ -22,13 +22,13 @@ of potential viruses.
 
 ## Overview of solution:
 
-There are seveal off the shelf tools avaialbe for generating virus, and evading detection by AV systems.
+There are several off the shelf tools available for generating virus, and evading detection by AV systems.
 To help AV developers understand the implications of these tools, they need to be able to evaluate the impact on AV detection rates.
 
-The project will be based on experementation, I will feed a windows computer different versions of a virus or exploit and record two variables. Firstly, 
+The project will be based on experimentation, I will feed a windows computer different versions of a virus or exploit and record two variables. Firstly, 
 did the antivirus pick up the virus and quarantine it. Secondly, if the virus run as intended with full functionality. 
 
-The results of experementation will be used to create a report, discussing the current state of the art in AV detection and evasion.
+The results of experimentation will be used to create a report, discussing the current state of the art in AV detection and evasion.
 
 These viruses will be created by using various readily available tools online and also by original python code create by myself. As different viruses will be given to the machine I expect that most will be detected 
 but some will fly under the radar of the antivirus. Hence my results will be drawn as a percentage of viruses that were detected, and the ones that escaped detection 
@@ -37,8 +37,8 @@ After drawing these results I’ll be able to suggest techniques that could be i
 
 ## Audience and Motivation:
 
-As discussed in section 1 above. (Put where revevant to get details from the topic section*, there are a range of tools that can be used to create effective viruses.
-The impact of these tools on detection is a (fast moving BETTER WORD) eviornment.  With plenty of innovations from both atter and defender.
+As discussed in section 1 above, as windows holds a majority share in the market when it comes to computers, there are a range of tools that can be used to create effective viruses.
+The impact of these tools on AV detection is continuously altering, and the environment is rapidly changing.  With plenty of innovations from both attakers and defenders, it is difficult to produce effective solutions to
 
 TODO:  Add a scection with some CITED research, discussing how many virus are creates,  how much money is lost, different techinques for detection vs exasion etc.  What you need to do here is sell why this is important.
 
