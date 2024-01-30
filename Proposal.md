@@ -37,7 +37,7 @@ After drawing these results I’ll be able to suggest techniques that could be i
 
 ## Audience and Motivation:
 
-*As discussed in section 1 above. (Put wehere revevant to get details from the topic section*, there are a range of tools that can be used to create effective viruses.
+As discussed in section 1 above. (Put where revevant to get details from the topic section*, there are a range of tools that can be used to create effective viruses.
 The impact of these tools on detection is a (fast moving BETTER WORD) eviornment.  With plenty of innovations from both atter and defender.
 
 TODO:  Add a scection with some CITED research, discussing how many virus are creates,  how much money is lost, different techinques for detection vs exasion etc.  What you need to do here is sell why this is important.
