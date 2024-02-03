@@ -51,6 +51,11 @@ able to rectify any mistakes.
 
 ## Project Plan:
 
+The project plan will follow an experimental methodology, I am using Getting Things Done (GTD) to plan my tasks by (David Allen). This will involve recording outputs, processing the data and then planning the next stage based on the outputs received.
+
+
+
+
   - Discuss overall stratey.  Experemental,  I would go for Agile like apporach,  So Task -> Plan -> test -> Plan next task based on this.
   - Gant chart.  Doesnt have to be super detailed at this point.  you can do Task (lit review, design , experemention, wriup) in weekly blocks. Make it sensible
   - As we go through projct revise gantt chat, add details. 
