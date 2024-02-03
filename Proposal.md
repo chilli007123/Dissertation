@@ -52,8 +52,9 @@ able to rectify any mistakes.
 ## Project Plan:
 
 The project plan will follow an experimental methodology, I am using Getting Things Done (GTD) to plan my tasks by (David Allen). This will involve recording outputs, processing the data and then planning the next stage based on the outputs received.
+This will allow me to plan time for the major tasks, but leave scope to add the details following the results of each piece of experimentation.
 
-
+Some potential problems I may face are the complexity around evading Windows defender. Antivirus has had many years to develop and mitigate risks against new computer viruses. On the other hand, I will have at best a couple of months to develop several iterations of computer virus to evade Windows defender. Through my experimentation I hope to demonstrate the robustness of Antivirus, and that off the shelf tools are unlikely to work. This protects us from many individuals that may try place a malicious executable on someone's machines
 
 
   - Discuss overall stratey.  Experemental,  I would go for Agile like apporach,  So Task -> Plan -> test -> Plan next task based on this.
