@@ -1,9 +1,17 @@
-# To what extent can Windows Defender detect malicious code where evasion techniques are used?
+---
+title: To what extent can Windows Defender detect malicious code where evasion techniques are used?
+author: Charles Graham
+# Ignore suprevisor for the moment
+titlepage: true
+disable-header-and-footer: true
 
-Student: Charles Graham
-Supervisor: Dr Daniel Goldsmith
+bibliography: references.bib
+reference-section-title: References
+citation-style: apa
+---
 
-## Project Topic:
+
+## project Topic:
 
 Within the cyber world there is a constant battle between virus and antivirus software. Due to computers evolving at an exponential rate, so are the techniques of virus development and mitigation. 
 I want to understand the extent to which the stock antivirus system Windows Defender is able to prevent malicious executables from being run on a stock windows machine. 
@@ -17,10 +25,11 @@ effectiveness of Windows defender we will be able to understand the possible fut
 of potential viruses.
 
 Some key things I intend to research are:
-**How well do off the shelf tools evade antivirus?**
-**What are the key characteristics of a virus?**
-**What behaviours cause antivirus to flag a file as malicious?**
-**What techniques, if any can be used to evade antivirus?**
+
+  - **How well do off the shelf tools evade antivirus?**
+  - **What are the key characteristics of a virus?**
+  - **What behaviours cause antivirus to flag a file as malicious?**
+  - **What techniques, if any can be used to evade antivirus?**
 
 
 ## Overview of solution:
@@ -56,7 +65,7 @@ able to rectify any mistakes.
 
 ## Project Plan:
 
-The project plan will follow an experimental methodology, I am using Getting Things Done (GTD) to plan my tasks by (David Allen, 2008). This will involve recording outputs, processing the data and then planning the next stage based on the outputs received.
+The project plan will follow an experimental methodology, I am using Getting Things Done (GTD) to plan my tasks[@allen2018getting]. This will involve recording outputs, processing the data and then planning the next stage based on the outputs received.
 This will allow me to plan time for the major tasks, but leave scope to add the details following the results of each piece of experimentation.
 
 Some potential problems I may face are the complexity around evading Windows defender. Antivirus has had many years to develop and mitigate risks against new computer viruses. On the other hand, I will have at best a couple of months to develop several iterations of computer virus to evade Windows defender. Through my experimentation I hope to demonstrate the robustness of Antivirus, and that off the shelf tools are unlikely to work. This protects us from many individuals that may try place a malicious executable on someone's machines
@@ -64,7 +73,7 @@ Some potential problems I may face are the complexity around evading Windows def
 As there is a coding aspect to my project I assume that a lot of time will be spent learning new coding techniques in order to evade antivirus. As there is a risk this will take too long, I am planning on leaving this task until the end. This way I dont risk spending too much time on one aspect of the project and will allow me to focus on other areas.
 
 
-![[gannt.png]]
+![Gantt Chart](gannt.png)
 
 ## References:
 
