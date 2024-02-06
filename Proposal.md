@@ -22,7 +22,7 @@ Some key things I intend to research are:
 **How well do off the shelf tools evade antivirus?**
 **What are the key characteristics of a virus?**
 **What behaviours cause antivirus to flag a file as malicious?**
-
+**What techniques, if any can be used to evade antivirus?**
 
 
 ## Overview of solution:
@@ -63,9 +63,7 @@ This will allow me to plan time for the major tasks, but leave scope to add the 
 
 Some potential problems I may face are the complexity around evading Windows defender. Antivirus has had many years to develop and mitigate risks against new computer viruses. On the other hand, I will have at best a couple of months to develop several iterations of computer virus to evade Windows defender. Through my experimentation I hope to demonstrate the robustness of Antivirus, and that off the shelf tools are unlikely to work. This protects us from many individuals that may try place a malicious executable on someone's machines
 
+As there is a coding aspect to my project I assume that a lot of time will be spent learning new coding techniques in order to evade antivirus. As there is a risk this will take too long, I am planning on leaving this task until the end. This way I dont risk spending too much time on one aspect of the project and will allow me to focus on other areas.
 
-  - Discuss overall stratey.  Experemental,  I would go for Agile like apporach,  So Task -> Plan -> test -> Plan next task based on this.
-  - Gant chart.  Doesnt have to be super detailed at this point.  you can do Task (lit review, design , experemention, wriup) in weekly blocks. Make it sensible
-  - As we go through projct revise gantt chat, add details. 
-  - Also disucss risks or potental problems.  Mostly around complexty of evasion.  However, its not a bad project becuase it demos that these tools dont work off the shelf, so we are safe from script kiddies.
-  - 
+
+![[gannt.png]]
