@@ -18,6 +18,13 @@ Having such a large share in the market means that an attacker’s priority when
 effectiveness of Windows defender we will be able to understand the possible future mitigations to be put in place so that all devices are protected from a multitude 
 of potential viruses.
 
+Some key things I intend to research are:
+**How well do off the shelf tools evade antivirus?**
+**What are the key characteristics of a virus?**
+**What behaviours cause antivirus to flag a file as malicious?**
+
+
+
 ## Overview of solution:
 
 There are several off the shelf tools available for generating viruses, and evading detection of AV systems.
