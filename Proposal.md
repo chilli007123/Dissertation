@@ -1,11 +1,9 @@
-## To what extent can Windows Defender detect malicious code where evasion techniques are used?
+# To what extent can Windows Defender detect malicious code where evasion techniques are used?
 
 Student: Charles Graham
 Supervisor: Dr Daniel Goldsmith
 
-# Project Topic:
-
-*Overall good background to the topic, gives nice context*
+## Project Topic:
 
 Within the cyber world there is a constant battle between virus and antivirus software. Due to computers evolving at an exponential rate, so are the techniques of virus development and mitigation. 
 I want to understand the extent to which the stock antivirus system Windows Defender is able to prevent malicious executables from being run on a stock windows machine. 
@@ -67,3 +65,6 @@ As there is a coding aspect to my project I assume that a lot of time will be sp
 
 
 ![[gannt.png]]
+
+## References:
+
