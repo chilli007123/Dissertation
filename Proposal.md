@@ -56,7 +56,7 @@ able to rectify any mistakes.
 
 ## Project Plan:
 
-The project plan will follow an experimental methodology, I am using Getting Things Done (GTD) to plan my tasks by (David Allen). This will involve recording outputs, processing the data and then planning the next stage based on the outputs received.
+The project plan will follow an experimental methodology, I am using Getting Things Done (GTD) to plan my tasks by (David Allen, 2008). This will involve recording outputs, processing the data and then planning the next stage based on the outputs received.
 This will allow me to plan time for the major tasks, but leave scope to add the details following the results of each piece of experimentation.
 
 Some potential problems I may face are the complexity around evading Windows defender. Antivirus has had many years to develop and mitigate risks against new computer viruses. On the other hand, I will have at best a couple of months to develop several iterations of computer virus to evade Windows defender. Through my experimentation I hope to demonstrate the robustness of Antivirus, and that off the shelf tools are unlikely to work. This protects us from many individuals that may try place a malicious executable on someone's machines
@@ -68,3 +68,11 @@ As there is a coding aspect to my project I assume that a lot of time will be sp
 
 ## References:
 
+Andra zaharia. (2024, Jan 19,). 300+ terrifying cybercrime & cybersecurity statistics (2024). [https://www.comparitech.com/vpn/cybersecurity-cyber-crime-statistics-facts-trends/](https://www.comparitech.com/vpn/cybersecurity-cyber-crime-statistics-facts-trends/)
+
+Bojan Jovanovic. (2023, -04-10T09:14:19+00:00). A not-so-common cold: Malware statistics in 2023. [https://dataprot.net/statistics/malware-statistics/](https://dataprot.net/statistics/malware-statistics/)
+
+David Allen. (2008). _Getting things done_
+[https://gettingthingsdone.com/wp-content/uploads/2014/10/Filing.pdf](https://gettingthingsdone.com/wp-content/uploads/2014/10/Filing.pdf)
+
+Samarati, M. (2017). _Cyber crime cost UK businesses £29 billion in 2016._ [https://www.itgovernance.co.uk/blog/2016-cyber-security-breaches-cost-uk-businesses-almost-30-billion](https://www.itgovernance.co.uk/blog/2016-cyber-security-breaches-cost-uk-businesses-almost-30-billion)
