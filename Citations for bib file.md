@@ -1,0 +1,25 @@
+
+@InProceedings{10.1007/978-981-16-8774-7_3,
+author="Kaushik, Keshav
+and Sandhu, Harshpreet Singh
+and Gupta, Neelesh Kumar
+and Sharma, Naman
+and Tanwar, Rohit", 
+editor="Marriwala, N.
+and Tripathi, C. C.
+and Jain, Shruti
+and Mathapathi, Shivakumar",
+title="A Systematic Approach for Evading Antiviruses Using Malware Obfuscation",
+booktitle="Emergent Converging Technologies and Biomedical Systems ",
+year="2022",
+publisher="Springer Singapore",
+address="Singapore",
+pages="29--37",
+abstract="Investigators and malware creators are getting neck to neck in the competition and thinking of new deadly implements in their fields. Normally, malware such as viruses and others are detected by looking for a string of bits, which is present in the virus or malware. These strings are considered as the ``fingerprint'' of the malware. Malware creators are utilizing novel modern methods like metamorphosis to foil recognition instruments while security experts are sprouting better approaches to defy them. Today, virus scholars regularly cover their viruses by utilizing code confusion procedures with an end goal to defeat signature-based discovery plans. Metamorphic viruses are those in which their uses are slightly similar but they differentiate in their inner structure. Both metamorphic viruses and polymorphic viruses are different in the technique they use to concealing the mark. While metamorphic viruses conceal their mark by manipulating their own code, polymorphic viruses principally depend on encryption for signature confusion. In this paper, we have shown that we can bypass virus detection on different platforms (operating system). The authors have compared the three methods for bypassing the antivirus Veil--Evasion, Graffiti, code obfuscation and have uncovered their results. Eventually, we give our methodology to make any virus imperceptible utilizing various procedures.",
+isbn="978-981-16-8774-7"
+}
+
+@article{aliexploring,
+  title={Exploring Polymorphism: Flexibility and Code Reusability in Object-Oriented Programming},
+  author={Ali, Hussein Mohammed and Hamza, Mahmood Yashar and Rashid, Tarik Ahmed}
+}
