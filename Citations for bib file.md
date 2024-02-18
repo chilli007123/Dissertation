@@ -23,3 +23,13 @@ isbn="978-981-16-8774-7"
   title={Exploring Polymorphism: Flexibility and Code Reusability in Object-Oriented Programming},
   author={Ali, Hussein Mohammed and Hamza, Mahmood Yashar and Rashid, Tarik Ahmed}
 }
+
+@article{aminu2020evaluating,
+  title={Evaluating the effectiveness of antivirus evasion tools against windows platform},
+  author={Aminu, Shawwal Adam and Sufyanu, Zahraddeen and Sani, Tajuddeen and Idris, Abdullahi},
+  journal={Fudma Journal of Sciences},
+  volume={4},
+  number={1},
+  pages={112--119},
+  year={2020}
+}

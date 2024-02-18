@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Proposal.md",
+                "file": "Dissertation MD FILE.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dissertation MD FILE.md",
+                "file": "Citations for bib file.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,11 +170,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "511255e8699902ab",
+  "active": "1b153af06b010e4b",
   "lastOpenFiles": [
+    "Proposal.md",
     "Citations for bib file.md",
     "Dissertation MD FILE.md",
-    "Proposal.md",
     "README.md",
     "gannt.png",
     "paper.pdf"
