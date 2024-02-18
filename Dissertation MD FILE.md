@@ -41,6 +41,6 @@ One strength of this paper is that the conclusion provides an optimal approach o
 
 In conclusion this paper has a strong connection with my proposal. The paper has some crucial methodology that is relevant to the approach that I intend to take. The overall results demonstrate that evasion of modern day antivirus systems is possible through the use of readily available tools. The paper is also very clear on the steps that need to be taken to reach the same results, and through this I will do my best to firstly replicate the results and then build upon them.
 
-
+In contrast to the results of this work [INSERT CITATION HERE PLEASE] found concluded that the best evasion tools were Avet and PeCloak.py. "Bypassed most of the selected antivirus by 83% and 67% respectively". 
 
 # Reference that needs to be properly done:
