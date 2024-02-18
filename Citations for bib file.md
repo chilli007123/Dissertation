@@ -33,3 +33,10 @@ isbn="978-981-16-8774-7"
   pages={112--119},
   year={2020}
 }
+
+@mastersthesis{kalogranis2018antivirus,
+  title={AntiVirus software evasion: an evaluation of the AV Evasion tools},
+  author={Kalogranis, Christos},
+  year={2018},
+  school={$\Pi$$\alpha$$\nu$$\varepsilon$$\pi$$\iota$$\sigma$$\tau$$\acute{\eta}$$\mu$$\iota$o $\Pi$$\varepsilon$$\iota$$\rho$$\alpha$$\iota$$\acute{\omega}$$\varsigma$}
+}
