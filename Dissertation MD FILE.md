@@ -30,6 +30,8 @@ Talk about what the project is and what the project is not
 Need to talk more about aims and objectives
 
 ## Literature review:
+To stand a chance at bypassing AV we need to understand the complexities around its detection mechanisms. This author breaks down the different detection types (INSERT THAT CITATION BOY [ A COMPREHENSIVE STUDY ]) Firstly, there is a signature analysis. This involves scanning the file for a specific signature that is found within a known virus, if the signature matches then the file will be reported as suspicious. One major disadvantage of using a detection system like this is that it can only scan for signatures that are known viruses; a new 0-day virus will not be detected by signature based detection.
+Because of this we have a heuristic detection system. With the help of probablistic algorithms it will "scan the file structure with the compliance with the virus patterns are checked" (INSERT THE SAME CITATION HERE). As this technique uses a probability algorithm it will cause false positives from time to time, an example of this may be a file that injects code into another applications memory, such as a mod for a game. As these methods arent foolproof there is a behavioural analysis, this type of analysis will break down a programs core functions and determine the nature of the programs processes through a points based system. 
 
 - Talk about what are antivirus evasion tools?
 - Discuss common techniques that may be used
