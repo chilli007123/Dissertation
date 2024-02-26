@@ -29,17 +29,21 @@ Talk about what the project is and what the project is not
 
 Need to talk more about aims and objectives
 
+## Legal and Ethical considerations:
+
+Throughout this project I will be researching and developing computer viruses, and therefore bare any responsibility over the programs I create and how they are used. Throughout the project I will be focussing 
+
 ## Literature review:
 
 ### Computer viruses
 https://www.britannica.com/technology/computer-virus (THIS IS THE CITATION PAGE)
 There are many different types of computer virus but the one that I intend to research is the Trojan horse virus. (CITATION DESCRIBES THIS AS) A type of malicious computer software, usually disguised within a legitimate or beneficial program. Once this software is installed on a users computer, the trojan will allow the attacker remote access to the victims computer. Remote access gives the attacker a very threatening position, with the ability to access all computer files, applications and data, the attacker has the opportunity to steal and sell your confidential data. (Inset this citation properly https://www.makeuseof.com/remote-access-risks/#:~:text=Risks%20Associated%20With%20Remote%20Computer%20Access%201%20Security,associated%20with%20remote%20access%20is%20performance%20issues.%20)
-In this paper by [@robinson2017s] The capturing of personal data was valued at US$60 for each internet user at the time (2012). Although outdated this paper sets an example of how personal data can be sold for profit. This breach in personal data can have a snowball affect of implications on the user and even cause problems such as identity theft and financial loss. Moreover, when data is lost from a company due to virus related incidents this can cause a reputation damage and leave doubt in customers.
+In this paper by [@robinson2017s] The capturing of personal data was valued at US$60 for each internet user at the time (2012). Although outdated this paper sets an example of how personal data can be sold for profit. This breach in personal data can have a snowball affect of implications on the user and even cause problems such as identity theft and financial loss. Moreover, when data is lost from a company due to virus related incidents, this can cause reputation damage and consequently loss of revenue.
 
 ### Computer virus history
 #### ILOVEYOU Virus
-Computer viruses have been around since early computer development. One of the most significant computer viruses was the "ILOVEYOU" virus. This computer virus came would be received via email and appear to be a text document described as a "Love letter coming from me". However, most users didnt realise the file was a VBS script which ran a program to corrupt documents on the hard drive and then replicate itself through your address book, sending out copies of itself to your contact list. (REFERENCE THIS https://www.kaspersky.com/blog/cybersecurity-history-iloveyou/45001/)
-This virus certainly wasn't the first to abuse this exploit, but it was a pivotal moment for malware development and the damages is estimated as about $10 billion
+Computer viruses have been around since early computer development. One of the most significant computer viruses was the "ILOVEYOU" virus. This computer virus came would be received via email and appear to be a text document described as a "Love letter coming from me". However, most users didnt realise the file received was a VBS script which ran a program to corrupt documents on the hard drive and then replicate itself through the use of your address book, and access to the email account. (REFERENCE THIS https://www.kaspersky.com/blog/cybersecurity-history-iloveyou/45001/)
+This virus certainly wasn't the first to abuse this exploit, but it was a pivotal moment for malware development and the damages incurred are estimated at about $10 billion.
 
 #### Zeus Virus
 https://www.cynet.com/malware/zeus-malware-variants-methods-and-history/
@@ -86,4 +90,3 @@ Some strengths of this paper are that the author used a virtual environment VM t
 In conjunction with [@kalogranis2018antivirus] these authors also conclude that results could be more substantial if the use of hand crafted payloads were employed. This would stop the signature based detection system from flagging files that have come from readily available tools and slow down the speed to which antivirus flags the file as suspicious. Although this is a farfetched idea to hand create every virus, it also demonstrates how the coding techniques such as polymorphic and metamorphic systems could be employed to create more devastating strains of computer virus. 
 
 
-# Reference that needs to be properly done:
