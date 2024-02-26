@@ -30,6 +30,12 @@ Talk about what the project is and what the project is not
 Need to talk more about aims and objectives
 
 ## Literature review:
+
+### Talking about computer viruses
+https://www.britannica.com/technology/computer-virus (THIS IS THE CITATION PAGE)
+There are many different types of computer virus but the one that I intend to research is the Trojan horse virus. (CITATION DESCRIBES THIS AS) A type of malicious computer software, usually diguised within a legitimate or beneficial program. Once this software is installedo n a users computer, the trojan will allow the attacker remote access to the victims computer. Remote accces gives the attacker a very threatening position, with the ability to access all computer files, applications and data, the attacker has the oppurtunity to steal and sell your confidential data. (Inset this citation properly https://www.makeuseof.com/remote-access-risks/#:~:text=Risks%20Associated%20With%20Remote%20Computer%20Access%201%20Security,associated%20with%20remote%20access%20is%20performance%20issues.%20)
+
+
 To stand a chance at bypassing AV we need to understand the complexities around its detection mechanisms. This author breaks down the different detection types (INSERT THAT CITATION BOY [ A COMPREHENSIVE STUDY ]) Firstly, there is a signature analysis. This involves scanning the file for a specific signature that is found within a known virus, if the signature matches then the file will be reported as suspicious. One major disadvantage of using a detection system like this is that it can only scan for signatures that are known viruses; a new 0-day virus will not be detected by signature based detection.
 Because of this we have a heuristic detection system. With the help of probablistic algorithms it will "scan the file structure with the compliance with the virus patterns are checked" (INSERT THE SAME CITATION HERE). As this technique uses a probability algorithm it will cause false positives from time to time, an example of this may be a file that injects code into another applications memory, such as a mod for a game. As these methods arent foolproof there is a behavioural analysis, this type of analysis will break down a programs core functions and determine the nature of the programs processes through a points based system. 
 
