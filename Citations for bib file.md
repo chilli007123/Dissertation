@@ -68,3 +68,12 @@ isbn="978-981-16-8774-7"
   year={2021},
   organization={IEEE}
 }
+
+@inproceedings{garba2019evaluating,
+  title={Evaluating the state of the art antivirus evasion tools on windows and android platform},
+  author={Garba, Faisal A and Kunya, Kabiru I and Ibrahim, Shazali A and Isa, Abubakar B and Muhammad, Khadija M and Wali, Nasiru N},
+  booktitle={2019 2nd International Conference of the IEEE Nigeria Computer Chapter (NigeriaComputConf)},
+  pages={1--4},
+  year={2019},
+  organization={IEEE}
+}
