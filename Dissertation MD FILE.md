@@ -50,6 +50,16 @@ Zeus/Zbot was a malware package that used a client/server model (Trojan). The ma
 Zeus was so successful in infecting machines, there was two common ways this was done. Firstly, Drive-by-downloads. This involved comprimising legitimate websites and exploiting known browser and operating system vulnerabilities to download the Zeus malware when a user accessed the site.
 Secondly, As zeus grew it gained the ability to infiltrate user accounts on social media and over email. With the comprimised accounts zeus would be able to create phising messages tricking users into downloading this malware.
 
+### Lifecycle of a computer virus
+(INSERT CITATION HERE CUZ ITS GOOD STUFF https://www.usenix.org/conference/usenixsecurity21/presentation/alrawi-circle)
+This paper looks to investigate the life cycle of a virus. The lifecycle can be broken down into five simple components.
+1) The infection vector; This is how the malware attacks a system
+2) The payload; This is the dropped malware code after exploitation
+3) Persistence; This is how the malware installs on a system
+4) Capabilities; The functions in the malware code
+5) C&C infrastructure; How the malware communicates with the operator
+
+Using these compontents we are able to break down how a virus is able to infect, execute, and replicate on machines.
 
 ### Protection mechanisms
 To stand a chance at bypassing AV we need to understand the complexities around its detection mechanisms. This author breaks down the different detection types (INSERT THAT CITATION BOY [ A COMPREHENSIVE STUDY ]) Firstly, there is a signature analysis. This involves scanning the file for a specific signature that is found within a known virus, if the signature matches then the file will be reported as suspicious. One major disadvantage of using a detection system like this is that it can only scan for signatures that are known viruses; a new 0-day virus will not be detected by signature based detection.
