@@ -13,6 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "54cb239dec9b7ff4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Dissertation MD FILE.md",
                 "mode": "source",
                 "source": false
@@ -20,30 +32,19 @@
             }
           },
           {
-            "id": "511255e8699902ab",
+            "id": "e4f47b1a0f64f457",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Citations for bib file.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "90eb92cf3039307c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Citations for bib file.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -154,7 +155,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -170,9 +171,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b153af06b010e4b",
+  "active": "54cb239dec9b7ff4",
   "lastOpenFiles": [
     "Citations for bib file.md",
+    "conflict-files-obsidian-git.md",
     "Dissertation MD FILE.md",
     "Proposal.md",
     "README.md",

@@ -33,14 +33,14 @@ Need to talk more about aims and objectives
 
 ### Talking about computer viruses
 https://www.britannica.com/technology/computer-virus (THIS IS THE CITATION PAGE)
-There are many different types of computer virus but the one that I intend to research is the Trojan horse virus. (CITATION DESCRIBES THIS AS) A type of malicious computer software, usually diguised within a legitimate or beneficial program. Once this software is installedo n a users computer, the trojan will allow the attacker remote access to the victims computer. Remote accces gives the attacker a very threatening position, with the ability to access all computer files, applications and data, the attacker has the oppurtunity to steal and sell your confidential data. (Inset this citation properly https://www.makeuseof.com/remote-access-risks/#:~:text=Risks%20Associated%20With%20Remote%20Computer%20Access%201%20Security,associated%20with%20remote%20access%20is%20performance%20issues.%20)
+There are many different types of computer virus but the one that I intend to research is the Trojan horse virus. (CITATION DESCRIBES THIS AS) A type of malicious computer software, usually disguised within a legitimate or beneficial program. Once this software is installed on a users computer, the trojan will allow the attacker remote access to the victims computer. Remote access gives the attacker a very threatening position, with the ability to access all computer files, applications and data, the attacker has the opportunity to steal and sell your confidential data. (Inset this citation properly https://www.makeuseof.com/remote-access-risks/#:~:text=Risks%20Associated%20With%20Remote%20Computer%20Access%201%20Security,associated%20with%20remote%20access%20is%20performance%20issues.%20)
 in this paper(https://www.emerald.com/insight/content/doi/10.1108/DPRG-05-2017-0018/full/html) The capturing of personal data was valued at US$60 for each internet user at the time (2012). Although outdated this paper sets an example of how personal data can be sold for profit, therefore giving a reason that we should protect it. 
 
 
 ### Computer virus history
 #### ILOVEYOU Virus
-Computer viruses have been around since early computer development. One of the most significant computer viruses was the "ILOVEYOU" virus. This computer virus came would be recieved via email and appear to be a text document described as a "Love letter coming from me". However, most users didnt realise the file was a VBS script which ran a program to corrupt documents on the hard drive and then replicate itself through your address book, sending out copies of itself to your contact list. (REFERENCE THIS https://www.kaspersky.com/blog/cybersecurity-history-iloveyou/45001/)
-This virus certainly wasnt the first to abuse this exploit, but it was a pivotal moment for malware development and the damages is estimated as about $10 billion
+Computer viruses have been around since early computer development. One of the most significant computer viruses was the "ILOVEYOU" virus. This computer virus came would be received via email and appear to be a text document described as a "Love letter coming from me". However, most users didnt realise the file was a VBS script which ran a program to corrupt documents on the hard drive and then replicate itself through your address book, sending out copies of itself to your contact list. (REFERENCE THIS https://www.kaspersky.com/blog/cybersecurity-history-iloveyou/45001/)
+This virus certainly wasn't the first to abuse this exploit, but it was a pivotal moment for malware development and the damages is estimated as about $10 billion
 
 
 <!-- Talk about zeus 2009-->
@@ -49,7 +49,7 @@ https://www.cynet.com/malware/zeus-malware-variants-methods-and-history/
 
 Zeus/Zbot was a malware package that used a client/server model (Trojan). The main function of zeus was to gain unauthorised access to financial systems by stealing credentials, banking information and financial data. This virus over the years infected over 3 million computers in the US, including companies such as NASA and the Bank of America. Zeus disguised it self as legitimate software and enables the malware when it spots the use of a banking site or financial transaction. 
 Zeus was so successful in infecting machines, there was two common ways this was done. Firstly, Drive-by-downloads. This involved comprimising legitimate websites and exploiting known browser and operating system vulnerabilities to download the Zeus malware when a user accessed the site.
-Secondly, As zeus grew it gained the ability to infiltrate user accounts on social media and over email. With the comprimised accounts zeus would be able to create phising messages tricking users into downloading this malware.
+Secondly, As Zeus grew it gained the ability to infiltrate user accounts on social media and over email. With the comprimised accounts zeus would be able to create phising messages tricking users into downloading this malware.
 
 ### Lifecycle of a computer virus
 (INSERT CITATION HERE CUZ ITS GOOD STUFF https://www.usenix.org/conference/usenixsecurity21/presentation/alrawi-circle)
@@ -60,7 +60,7 @@ This paper looks to investigate the life cycle of a virus. The lifecycle can be 
 4) Capabilities; The functions in the malware code
 5) C&C infrastructure; How the malware communicates with the operator
 
-Using these compontents we are able to break down how a virus is able to infect, execute, and replicate on machines.
+Using these components we are able to break down how a virus is able to infect, execute, and replicate on machines.
 
 ### Protection mechanisms
 To stand a chance at bypassing AV we need to understand the complexities around its detection mechanisms. This author breaks down the different detection types (INSERT THAT CITATION BOY [ A COMPREHENSIVE STUDY ]) Firstly, there is a signature analysis. This involves scanning the file for a specific signature that is found within a known virus, if the signature matches then the file will be reported as suspicious. One major disadvantage of using a detection system like this is that it can only scan for signatures that are known viruses; a new 0-day virus will not be detected by signature based detection.
