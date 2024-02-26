@@ -30,13 +30,11 @@ Talk about what the project is and what the project is not
 Need to talk more about aims and objectives
 
 ## Legal and Ethical considerations:
-
-
 #### Legal
 Throughout this project I will be researching and developing computer viruses, and therefore bare any responsibility over the programs I create and how they are used. Because legal considerations around Computer Misuse Act (1990) and Civil Liability Laws, all versions of computer virus that are created will be tested locally. This means that we wont address how viruses spread over the internet, but we will dive into how well AV detects them once on a "victims" computer. During this research no data will be lost or destroyed and no person(s) will be affected by my research. 
 
 #### Ethical
-As my research explores 
+As my research explores the techniques and mindset that a malware developer may use there are some ethical implications. Firstly, any code that is created
 
 ## Literature review:
 
