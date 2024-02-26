@@ -77,3 +77,20 @@ isbn="978-981-16-8774-7"
   year={2019},
   organization={IEEE}
 }
+
+@misc{The_Editors_of_Encyclopaedia_2022, 
+title={Trojan}, 
+url={https://www.britannica.com/technology/trojan-computing}, 
+journal={Encyclopædia Britannica}, 
+publisher={Encyclopædia Britannica, inc.}, 
+year={2022}, 
+month={Jul}
+}
+
+@misc{Bhardwaj_2022, 
+title={What are the risks of Remote Computer Access?}, 
+url={https://www.makeuseof.com/remote-access-risks/#:~:text=Risks%20Associated%20With%20Remote%20Computer%20Access%201%20Security,associated%20with%20remote%20access%20is%20performance%20issues.%20}, journal={MUO}, 
+author={Bhardwaj, Pranav}, 
+year={2022}, 
+month={Sep}
+}
