@@ -40,3 +40,31 @@ isbn="978-981-16-8774-7"
   year={2018},
   school={$\Pi$$\alpha$$\nu$$\varepsilon$$\pi$$\iota$$\sigma$$\tau$$\acute{\eta}$$\mu$$\iota$o $\Pi$$\varepsilon$$\iota$$\rho$$\alpha$$\iota$$\acute{\omega}$$\varsigma$}
 }
+
+@inproceedings{alrawi2021circle,
+  title={The Circle of life: A $\{$large-scale$\}$ study of the $\{$IoT$\}$ malware lifecycle},
+  author={Alrawi, Omar and Lever, Charles and Valakuzhy, Kevin and Snow, Kevin and Monrose, Fabian and Antonakakis, Manos and others},
+  booktitle={30th USENIX Security Symposium (USENIX Security 21)},
+  pages={3505--3522},
+  year={2021}
+}
+
+@article{robinson2017s,
+  title={What’s your anonymity worth? Establishing a marketplace for the valuation and control of individuals’ anonymity and personal data},
+  author={Robinson, Stephen Cory},
+  journal={Digital Policy, Regulation and Governance},
+  volume={19},
+  number={5},
+  pages={353--366},
+  year={2017},
+  publisher={Emerald Publishing Limited}
+}
+
+@inproceedings{rohith2021comprehensive,
+  title={A comprehensive study on malware detection and prevention techniques used by anti-virus},
+  author={Rohith, Cheerala and Kaur, Gagandeep},
+  booktitle={2021 2nd International Conference on Intelligent Engineering and Management (ICIEM)},
+  pages={429--434},
+  year={2021},
+  organization={IEEE}
+}
