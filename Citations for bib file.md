@@ -119,3 +119,12 @@
 	year={2022}, 
 	month={Aug}
 }
+
+@inproceedings{bazrafshan2013survey,
+  title={A survey on heuristic malware detection techniques},
+  author={Bazrafshan, Zahra and Hashemi, Hashem and Fard, Seyed Mehdi Hazrati and Hamzeh, Ali},
+  booktitle={The 5th Conference on Information and Knowledge Technology},
+  pages={113--120},
+  year={2013},
+  organization={IEEE}
+}
