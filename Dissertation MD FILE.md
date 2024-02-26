@@ -43,7 +43,7 @@ In this paper by [@robinson2017s] The capturing of personal data was valued at U
 
 ### Computer virus history
 #### ILOVEYOU Virus
-Computer viruses have been around since early computer development. One of the most significant computer viruses was the "ILOVEYOU" virus. This computer virus came would be received via email and appear to be a text document described as a "Love letter coming from me". However, most users didnt realise the file received was a VBS script which ran a program to corrupt documents on the hard drive and then replicate itself through the use of your address book, and access to the email account. (REFERENCE THIS https://www.kaspersky.com/blog/cybersecurity-history-iloveyou/45001/)
+Computer viruses have been around since early computer development. One of the most significant computer viruses was the "ILOVEYOU" virus. The web article by [@Root_2022] explains the computer virus would be received via email and appear to be a text document described as a "Love letter coming from me". However, most users didnt realise the file received was a VBS script which ran a program to corrupt documents on the hard drive and then replicate itself through the use of your address book, and access to the email account. 
 This virus certainly wasn't the first to abuse this exploit, but it was a pivotal moment for malware development and the damages incurred are estimated at about $10 billion.
 
 #### Zeus Virus

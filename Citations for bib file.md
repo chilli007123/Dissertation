@@ -79,18 +79,27 @@ isbn="978-981-16-8774-7"
 }
 
 @misc{The_Editors_of_Encyclopaedia_2022, 
-title={Trojan}, 
-url={https://www.britannica.com/technology/trojan-computing}, 
-journal={Encyclopædia Britannica}, 
-publisher={Encyclopædia Britannica, inc.}, 
-year={2022}, 
-month={Jul}
+ title={Trojan}, 
+ url={https://www.britannica.com/technology/trojan-computing}, 
+ journal={Encyclopædia Britannica}, 
+ publisher={Encyclopædia Britannica, inc.}, 
+ year={2022}, 
+ month={Jul}
 }
 
 @misc{Bhardwaj_2022, 
-title={What are the risks of Remote Computer Access?}, 
-url={https://www.makeuseof.com/remote-access-risks/#:~:text=Risks%20Associated%20With%20Remote%20Computer%20Access%201%20Security,associated%20with%20remote%20access%20is%20performance%20issues.%20}, journal={MUO}, 
-author={Bhardwaj, Pranav}, 
-year={2022}, 
-month={Sep}
+ title={What are the risks of Remote Computer Access?}, 
+ url={https://www.makeuseof.com/remote-access-risks/#:~:text=Risks%20Associated%20With%20Remote%20Computer%20Access%201%20Security,associated%20with%20remote%20access%20is%20performance%20issues.%20}, journal={MUO}, 
+ author={Bhardwaj, Pranav}, 
+ year={2022}, 
+ month={Sep}
+}
+
+@misc{Root_2022, 
+ title={Iloveyou: The virus that loved everyone}, 
+ url={https://www.kaspersky.com/blog/cybersecurity-history-iloveyou/45001/}, 
+ journal={Daily English Global blogkasperskycom}, 
+ author={Root, Enoch}, 
+ year={2022}, 
+ month={Aug}
 }
