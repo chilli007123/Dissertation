@@ -77,7 +77,7 @@
 }
 
 @inproceedings{rohith2021comprehensive,
-	title={A comprehensive study on malware detection and prevention techniques used by anti-virus},
+	title={# Antivirus Evasion Methods in Modern Operating Systems},
 	author={Rohith, Cheerala and Kaur, Gagandeep},
 	booktitle={2021 2nd International Conference on Intelligent Engineering and Management (ICIEM)},
 	pages={429--434},
