@@ -138,3 +138,13 @@
 	pages={3263--3269},
 	year={2023}
 }
+
+@article{rad2012camouflage,
+	title={Camouflage in malware: from encryption to metamorphism},
+	author={Rad, Babak Bashari and Masrom, Maslin and Ibrahim, Suhaimi},
+	journal={International Journal of Computer Science and Network Security},
+	volume={12},
+	number={8},
+	pages={74--83},
+	year={2012}
+}
