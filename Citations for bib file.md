@@ -148,3 +148,12 @@
 	pages={74--83},
 	year={2012}
 }
+
+@article{balakrishnan2005code,
+	title={Code obfuscation literature survey},
+	author={Balakrishnan, Arini and Schulze, Chloe},
+	journal={CS701 Construction of compilers},
+	volume={19},
+	pages={31},
+	year={2005}
+}

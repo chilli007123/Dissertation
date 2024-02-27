@@ -75,13 +75,12 @@ The author [@andryani2023detect] explains that a sandbox provides and isolated e
 Overall these protection mechanisms all have their strengths and weaknesses. For an antivirus system to be reliable and effective, all 4 of these techniques should be employed to provide the most accurate and effective detection. In modern day antivirus systems these techniques will be highly developed and accurate to ensure the best possible security, however that doesn't mean that they're un-evadable.
 ### Bypass methods
 As virus detection techniques have evolved over the years so has the need to create tools that bypass these techniques. The author [@garba2019evaluating] says "Malwares generates using tools such as Metasploit are easily detected nowadays due to the techniques used by antiviruses" As a direct reaction tools have had to evolve to keep up with antivirus detection. In this section I will discuss some popular techniques that malicious users may use to bypass AV.
-
 #### Encryption
 The author [@rad2012camouflage] defines encryption as the earliest and simplest method employed by the malware programmers to achieve their goal. The first known encrypted virus appeared in 1987 and was named, Cascade. Encryption can be achieved in many ways, a simple way a payload can be encrypted is through the reversable XOR function. Since this paper more tools have developed such as msfvenom which will take a payload and encrypt using a specified algorithm.
 #### Obfuscation
-#### Polymorphism
-#### Metamorphism
-
+"General code obfuscation techniques aim to confuse the understanding of the way in which a program functions. These can range from simple layout transformations to complicated changes in control and data flow" [@balakrishnan2005code]. When employed into bypassing antivirus, Obfuscation can be used to hide the intentions of an executable. As obfuscation transforms or changes the code, this in turn changes the signature of a file, making antivirus software unable to detect the executable through signature based detection. Like encryption, due to more detection mechanisms, obfuscation would have to be used in compliment to another evasion technique to have a chance of being successful. Although bypassing one detection is a step in the right direction, it is not enough to evade AV on its own.
+##### Polymorphism
+##### Metamorphism
 
 #### Off-The-Shelf Tools
 
