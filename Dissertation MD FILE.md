@@ -74,7 +74,16 @@ The author [@andryani2023detect] explains that a sandbox provides and isolated e
 
 Overall these protection mechanisms all have their strengths and weaknesses. For an antivirus system to be reliable and effective, all 4 of these techniques should be employed to provide the most accurate and effective detection. In modern day antivirus systems these techniques will be highly developed and accurate to ensure the best possible security, however that doesn't mean that they're un-evadable.
 ### Bypass methods
-As virus detection techniques have evolved over the years so has the need to create tools that bypass these techniques. The author [@garba2019evaluating] says "Malwares generates using tools such as Metasploit are easily detected nowadays due to the techniques used by antiviruses" As a direct reaction tools have had to evolve to keep up with antivirus detection. Some techniques employed to bypass AV are encryption, oligomorphism, polymorphism, metamorphism and obfuscation. There are tools out there such as Veil, Avet, TheFatRat and PeCloak.py that aim to quickly create an undetectable executable for us. The problem with these publicly available tools is that AV developers are able to access source code and may patch any exploits that can be abused. 
+As virus detection techniques have evolved over the years so has the need to create tools that bypass these techniques. The author [@garba2019evaluating] says "Malwares generates using tools such as Metasploit are easily detected nowadays due to the techniques used by antiviruses" As a direct reaction tools have had to evolve to keep up with antivirus detection. In this section I will discuss some popular techniques that malicious users may use to bypass AV.
+
+#### Encryption
+#### Obfuscation
+#### Polymorphism
+
+#### Off-The-Shelf Tools
+
+
+<!--Some techniques employed to bypass AV are encryption, oligomorphism, polymorphism, metamorphism and obfuscation. There are tools out there such as Veil, Avet, TheFatRat and PeCloak.py that aim to quickly create an undetectable executable for us. The problem with these publicly available tools is that AV developers are able to access source code and may patch any exploits that can be abused. -->
 
 As I mentioned in section 1, computer malware infects thousands of companies per day [@jovanovic2023malware] "Every minute, four companies fall victim to ransomware attacks". With more research being poured into discovering the techniques that black hat hackers may use to create a backdoor into a machine, the better chance we have at developing prevention techniques that quarantine these unwanted programs. If we could stop the effectiveness of computer viruses then this would enable a higher level of confidentiality and data integrity, saving companies compensation claims and loss of reputation.
 
