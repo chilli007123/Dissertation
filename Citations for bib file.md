@@ -121,10 +121,20 @@
 }
 
 @inproceedings{bazrafshan2013survey,
-  title={A survey on heuristic malware detection techniques},
-  author={Bazrafshan, Zahra and Hashemi, Hashem and Fard, Seyed Mehdi Hazrati and Hamzeh, Ali},
-  booktitle={The 5th Conference on Information and Knowledge Technology},
-  pages={113--120},
-  year={2013},
-  organization={IEEE}
+	title={A survey on heuristic malware detection techniques},
+	author={Bazrafshan, Zahra and Hashemi, Hashem and Fard, Seyed Mehdi Hazrati and Hamzeh, Ali},
+	booktitle={The 5th Conference on Information and Knowledge Technology},
+	pages={113--120},
+	year={2013},
+	organization={IEEE}
+}
+
+@article{andryani2023detect,
+	title={DETECT AND MITIGATE MALWARE THREATS USING SANDBOXING TECHNOLOGY},
+	author={Andryani, Ade and Sutabri, Tata},
+	journal={Jurnal Scientia},
+	volume={12},
+	number={03},
+	pages={3263--3269},
+	year={2023}
 }
