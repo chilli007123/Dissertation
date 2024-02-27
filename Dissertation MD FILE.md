@@ -77,8 +77,11 @@ Overall these protection mechanisms all have their strengths and weaknesses. For
 As virus detection techniques have evolved over the years so has the need to create tools that bypass these techniques. The author [@garba2019evaluating] says "Malwares generates using tools such as Metasploit are easily detected nowadays due to the techniques used by antiviruses" As a direct reaction tools have had to evolve to keep up with antivirus detection. In this section I will discuss some popular techniques that malicious users may use to bypass AV.
 
 #### Encryption
+The author [@] defines encryption as the earliest and simplest method employed by the malware programmers to achieve their goal. The first known encrypted virus appread in 1987 and was named 
 #### Obfuscation
 #### Polymorphism
+#### Metamorphism
+
 
 #### Off-The-Shelf Tools
 
