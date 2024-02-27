@@ -157,3 +157,12 @@
 	pages={31},
 	year={2005}
 }
+
+@article{konstantinou2008metamorphic,
+	title={Metamorphic virus: Analysis and detection},
+	author={Konstantinou, Evgenios and Wolthusen, Stefen},
+	journal={Royal Holloway University of London},
+	volume={15},
+	pages={15},
+	year={2008}
+}
