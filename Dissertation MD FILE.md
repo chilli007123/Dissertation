@@ -107,6 +107,11 @@ Some strengths of this paper are that the author used a virtual environment VM t
 
 In conjunction with [@kalogranis2018antivirus] these authors also conclude that results could be more substantial if the use of hand crafted payloads were employed. This would stop the signature based detection system from flagging files that have come from readily available tools and slow down the speed to which antivirus flags the file as suspicious. Although this is a farfetched idea to hand create every virus, it also demonstrates how the coding techniques such as polymorphic and metamorphic systems could be employed to create more devastating strains of computer virus. 
 
+#### Paper 3
 
+https://ieeexplore.ieee.org/abstract/document/9519480
 
+In the paper by.... discusses a sophisticated evasion technique called Living-Off-The-Land (LotL). This evasion technique is one of the major evasion techniques used in many attacks. The premise behind this attack is to leverage binaries that are already present in the system to conduct the attack. This is an interesting technique as it potentially bypasses the need for the attacker to inject a suspicious program onto the system. The conclusions of this paper highlight that almost every popular AV product tested had difficulties detecting malicious usage of LotL binaries. Later development included working with AV vendors and working to implement detection methods for this style of attack.
+
+As this technique relies on the binaries already present on the machine there are some limitations, firstly in an ideal world the premissions for each binary would be set up in a way that prevent exploitation. Known binary exploits for windows can be found in LOLBAS project. 
 
