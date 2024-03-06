@@ -113,5 +113,6 @@ https://ieeexplore.ieee.org/abstract/document/9519480
 
 In the paper by.... discusses a sophisticated evasion technique called Living-Off-The-Land (LotL). This evasion technique is one of the major evasion techniques used in many attacks. The premise behind this attack is to leverage binaries that are already present in the system to conduct the attack. This is an interesting technique as it potentially bypasses the need for the attacker to inject a suspicious program onto the system. The conclusions of this paper highlight that almost every popular AV product tested had difficulties detecting malicious usage of LotL binaries. Later development included working with AV vendors and working to implement detection methods for this style of attack.
 
+One reason why this paper is so significant is due to LotL creating . As the technique uses present binaries on the windows system this 
 As this technique relies on the binaries already present on the machine there are some limitations, firstly in an ideal world the permissions for each binary would be set up in a way that prevent exploitation. Known binary exploits for windows can be found in LOLBAS project. 
 
