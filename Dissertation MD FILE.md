@@ -15,7 +15,7 @@ Up-to-date sources indicate that "560,000 new pieces of malware are detected eve
 
 Antivirus software is arguably one of the most critical processes on our computers, blocking internal and external threats and protecting our computers from malicious users. My projects will be important to the blue and red teams within cybersecurity. With more excellent knowledge of how antivirus systems cope with different forms of evasion, will ensure that new protections are put in place to secure devices further. Also, I'm positive that my research will also benefit individual users who have little knowledge of cyber threats. Reasoning for this is that demonstrating the different ways in which a virus can come will encourage users to be more cautious when opening a file from an unsigned source. Furthermore, antivirus developers will be able to use my research to locate the flaws in any existing products. If a particular technique used guarantees antivirus evasion, then developers will be able to rectify any mistakes.
 
-<!--Talk about what the project is and what the project is not -->
+<!-- Talk about what the project is and what the project is not -->
 
 ### Aims and objectives:
 
@@ -27,7 +27,7 @@ Antivirus software is arguably one of the most critical processes on our compute
 
 -      What techniques, if any, can be used to evade Antivirus?
 
-Need to talk more about aims and objectives
+<!-- Need to talk more about aims and objectives -->
 
 ## Legal and Ethical considerations:
 #### Legal
@@ -119,11 +119,19 @@ The authors first analyse several databases of up to roughly 31,000,000 differen
 
 Like all research on virus/antivirus developers, both sides benefit from the findings. Like the authors concluded, the findings of the paper helped AV developers in creating new detection mechanism for LotL. On the other hand, weaknesses have been exposed in current versions of windows and the antivirus companies that don't have any protections in place. For There will be need for ongoing research on this topic so that AV can keep up with the evolving LotL techniques. Since this research (INSERT https://www.sciencedirect.com/science/article/pii/S016740482300562X?casa_token=2WuA2-8cOwUAAAAA:g4QnD_-cp6RHFAjZfQLUGEkL61zEisyKpNZO6ho6RpFE84zZM_rLs59wM5nlXUQ-bkJi5_8Hg1JY ) analysed the evolution of fileless attacks. Results found that the prevalence of fileless attacks has been increasing year-by-year, and with this so has LotL. LotL is not solely a windows based problem, and are a significant concern on Linux too. They are challenging to attack due to the stealthy ways they abuse binaries and require special attention.
 
-# Key Findings:
+## Key Findings:
 
 After reading and discussing these papers I want to emphasize some key findings and patterns. Firstly, across the reviewed papers, a consistent pattern emerges; Malware developers employ evasion techniques such as obfuscation, encryption to hide their payload from traditional detection methods such as signature based systems. Also, as my papers span over a a few years there are contradictions in the findings of different authors. The contradictions exemplify the battle between virus and AV developers. Some techniques or tools that may have worked 6 months ago may now be obsolete, whereas tools that may previously of not worked could be the key to creating a working payload. Lastly, we have discussed the strengths and limitations of each detection mechanisms such as, signature, behavioural and heuristic. Lastly the tools and current evasion tehcniques have been dicussed.  
 Some negative patterns emerged too, authors understood the importance of handcrafted payloads and the implications it could have for AV detection, however this assumption was not reflected in their papers. Most experimentation consisted of payload generation through the usage of tools. Although this is a very convenient for experimentation, it wont allow for the results to be fully reflective of real life scenarios where it is missing a key aspect in ways that payloads are crafted. Through my experiment I will attempt to fill the gaps in research by developing my own payload through the use of python.
-Understanding this research enables me to start answering my research questions. Firstly, key characteristics of a virus was defined by [@alrawi2021circle] as having 5 simple components (The infection vector, the payload, persistence, capabilities, C&C infrastructure)
+Understanding this research enables me to start answering my research questions. Firstly, key characteristics of a virus was defined by [@alrawi2021circle] as having 5 simple components (The infection vector, the payload, persistence, capabilities, C&C infrastructure) Lastly, [@bazrafshan2013survey] defines how beahvioural based mechanims use probablistic algorithms to determine whether a programs behaviour is malicious. 
+
+# Methodology
+
+I will adopting an experimental methodlogy to answer, to what extent can Windows Defender detect malicious code where evasion techniques are used. To answer this question fully I have broken broken down the research questions into sub questions
+- 1) How well do off-the-shelf tools evade antivirus?
+- 2) What evasion techniques, if any can successfully evade antivirus?
+- 3) Is it feesable to handcraft payloads, as opposed to generation through tools.
+
 
 
 <!-- More work needs to done on take aways
