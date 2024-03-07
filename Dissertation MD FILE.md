@@ -132,7 +132,14 @@ I will adopting an experimental methodlogy to answer, to what extent can Windows
 - 2) What evasion techniques, if any can successfully evade antivirus?
 - 3) Is it feesable to handcraft payloads, as opposed to generation through tools.
 
+## Environment
+In order to test the hypothesis, firstly an envrionment will need to be setup. The experimentation will be carried out on  virtual machines (VMware Workstation 16) with the target running Windows 10 to the latest patch, and the attacker running Kali linux. 
 
+## Tools
+### Vail 3.0
+### Pe.Cloak.py
+### Msfvenom
+<!-- have more examples here -->
 
 <!-- More work needs to done on take aways
 Closing thoughts, research questions and future directions should be enough --> 
