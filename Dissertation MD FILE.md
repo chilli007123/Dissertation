@@ -121,5 +121,5 @@ Like all research on virus/antivirus developers, both sides benefit from the fin
 
 # Key Findings:
 
-After reading and discussing these papers I want to emphasize some key findings and patterns. Firstly, acro
+After reading and discussing these papers I want to emphasize some key findings and patterns. Firstly, across the reviewed papers, a consistent pattern emerges; Malware developers employ evasion techniques such as obfuscation, encryption to hide their payload from traditional detection methods such as signature based systems. Also, as my papers span over a a few years there are contradictions in the findings of different authors. The contradictions exemplify the battle between virus and AV developers. Some techniques or tools that may have worked 6 months ago may now be obsolete, whereas tools that may previously of not worked could be the key to creating a working payload.
 
