@@ -121,6 +121,5 @@ Like all research on virus/antivirus developers, both sides benefit from the fin
 
 # Key Findings:
 
-After reading and discussing these papers I want to emphasize some key findings and patterns. Firstly, the key 
-
+After reading and discussing these papers I want to emphasize some key findings and patterns. Firstly, acro
 
