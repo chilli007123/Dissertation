@@ -133,10 +133,19 @@ I will adopting an experimental methodlogy to answer, to what extent can Windows
 - 3) Is it feesable to handcraft payloads, as opposed to generation through tools.
 
 ## Environment
-In order to test the hypothesis, firstly an envrionment will need to be setup. The experimentation will be carried out on  virtual machines (VMware Workstation 16) with the target running Windows 10 to the latest patch, and the attacker running Kali linux. 
+In order to test the hypothesis, firstly an envrionment will need to be setup. The experimentation will be carried out within a labatory and using virtual machines hosted on (VMware Workstation 16) with the target running Windows 10 to the latest patch, and the attacker running Kali linux. The two machines will be connected through the same private NAT network device. Reasoning for this is to enable the two machines to freely communicate with one another using local IP addresses, ensuring that no other devices accidentally get infected with any generated payloads and that there are no external variables unaccounted for. (INSERT A FIGURE TO DEMONSTRATE THE CONNECTION) 
+
+<!-- will include a simple picture to demonstrate how the two machines are connected together -->
+
+Kali linux comes with a wide range of pre-installed pen-testing applications and tools, due to the freedom that kali linux enables, this will also allow creation of malicious payloads without the risk of the operating system deleting any crucial work. As discussed above, the purpose of this research is focussing on the effectiveness of windows defender to when a malicious file is already present on the machine. Futhermore, the target will be infected by through the aid of pythons http server command.  `python -m http.server`. Through the usage of this command I will be able to setup a temporary local webserver from the attackers current directory, that enables the target machine to download any payloads that are created. This will be futher highlighted in the figure below (CREATE ANOTHER FIGURE LAZY BUM) 
+
+<!-- Talk about how the viruses will be tested; one at a time, how they will be evaluated, oh and the type of viruses that will be generated (RAT's) mainly reverse tcp bind.
 
 ## Tools
+In this section i will discuss the tools and methods that will be employed to evaluate how well off-the-shelf tools evade antivirus. I have chosen a selection of well known and frequently updated tools for this section, this will hopefully give the best chance at evading antivirus.
+
 ### Vail 3.0
+The reason Veil has been selected is due to the contradictory results that were generated over the span of a few years in the section above. 
 ### Pe.Cloak.py
 ### Msfvenom
 <!-- have more examples here -->
