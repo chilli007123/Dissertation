@@ -122,7 +122,8 @@ Like all research on virus/antivirus developers, both sides benefit from the fin
 # Key Findings:
 
 After reading and discussing these papers I want to emphasize some key findings and patterns. Firstly, across the reviewed papers, a consistent pattern emerges; Malware developers employ evasion techniques such as obfuscation, encryption to hide their payload from traditional detection methods such as signature based systems. Also, as my papers span over a a few years there are contradictions in the findings of different authors. The contradictions exemplify the battle between virus and AV developers. Some techniques or tools that may have worked 6 months ago may now be obsolete, whereas tools that may previously of not worked could be the key to creating a working payload. Lastly, we have discussed the strengths and limitations of each detection mechanism and bypass method.  
-Some negative patterns emerged too, In all but one research paper. Authors understood the importance of handcrafted payloads and the implications it could have for AV detection, however this was not p
+Some negative patterns emerged too, In all but one research paper. Authors understood the importance of handcrafted payloads and the implications it could have for AV detection, however this was not put to practice. Most experimentation consisted of payload generation through the usage of tools. Although this is a very convenient for experimentation, it wont allow for the results to be fully reflective of real life scenarios where it is missing a key aspect in ways that payloads are crafted. 
 
 
-
+<!-- More work needs to done on take aways
+Closing thoughts, research questions and future directions should be enough --> 
