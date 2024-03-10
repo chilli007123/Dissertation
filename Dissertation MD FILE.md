@@ -139,7 +139,7 @@ In order to test the hypothesis, firstly an envrionment will need to be setup. T
 
 Kali linux comes with a wide range of pre-installed pen-testing applications and tools, due to the freedom that kali linux enables, this will also allow creation of malicious payloads without the risk of the operating system deleting any crucial work. As discussed above, the purpose of this research is focussing on the effectiveness of windows defender to when a malicious file is already present on the machine. Futhermore, the target will be infected by through the aid of pythons http server command.  `python -m http.server`. Through the usage of this command I will be able to setup a temporary local webserver from the attackers current directory, that enables the target machine to download any payloads that are created. This will be futher highlighted in the figure below (CREATE ANOTHER FIGURE LAZY BUM) 
 
-<!-- Talk about how the viruses will be tested; one at a time, how they will be evaluated, oh and the type of viruses that will be generated (RAT's) mainly reverse tcp bind.
+<!-- Talk about how the viruses will be tested; one at a time, how they will be evaluated, oh and the type of viruses that will be generated (RAT's) mainly reverse tcp bind. -->
 
 ## Tools
 In this section i will discuss the tools and methods that will be employed to evaluate how well off-the-shelf tools evade antivirus. I have chosen a selection of well known and frequently updated tools for this section, this will hopefully give the best chance at evading antivirus.
