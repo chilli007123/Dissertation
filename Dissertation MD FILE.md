@@ -121,26 +121,29 @@ Like all research on virus/antivirus developers, both sides benefit from the fin
 
 ## Key Findings:
 
-After reading and discussing these papers I want to emphasize some key findings and patterns. Firstly, across the reviewed papers, a consistent pattern emerges; Malware developers employ evasion techniques such as obfuscation, encryption to hide their payload from traditional detection methods such as signature based systems. Also, as my papers span over a a few years there are contradictions in the findings of different authors. The contradictions exemplify the battle between virus and AV developers. Some techniques or tools that may have worked 6 months ago may now be obsolete, whereas tools that may previously of not worked could be the key to creating a working payload. Lastly, we have discussed the strengths and limitations of each detection mechanisms such as, signature, behavioural and heuristic. Lastly the tools and current evasion tehcniques have been dicussed.  
+After reading and discussing these papers I want to emphasize some key findings and patterns. Firstly, across the reviewed papers, a consistent pattern emerges; Malware developers employ evasion techniques such as obfuscation, encryption to hide their payload from traditional detection methods such as signature based systems. Also, as my papers span over a a few years there are contradictions in the findings of different authors. The contradictions exemplify the battle between virus and AV developers. Some techniques or tools that may have worked 6 months ago may now be obsolete, whereas tools that may previously of not worked could be the key to creating a working payload. Lastly, we have discussed the strengths and limitations of each detection mechanisms such as, signature, behavioural and heuristic. Lastly the tools and current evasion techniques have been discussed.  
 Some negative patterns emerged too, authors understood the importance of handcrafted payloads and the implications it could have for AV detection, however this assumption was not reflected in their papers. Most experimentation consisted of payload generation through the usage of tools. Although this is a very convenient for experimentation, it wont allow for the results to be fully reflective of real life scenarios where it is missing a key aspect in ways that payloads are crafted. Through my experiment I will attempt to fill the gaps in research by developing my own payload through the use of python.
-Understanding this research enables me to start answering my research questions. Firstly, key characteristics of a virus was defined by [@alrawi2021circle] as having 5 simple components (The infection vector, the payload, persistence, capabilities, C&C infrastructure) Lastly, [@bazrafshan2013survey] defines how beahvioural based mechanims use probablistic algorithms to determine whether a programs behaviour is malicious. 
+Understanding this research enables me to start answering my research questions. Firstly, key characteristics of a virus was defined by [@alrawi2021circle] as having 5 simple components (The infection vector, the payload, persistence, capabilities, C&C infrastructure) Lastly, [@bazrafshan2013survey] defines how behavioural based mechanism use probabilistic algorithms to determine whether a programs behaviour is malicious. 
 
 # Methodology
 
-I will adopting an experimental methodlogy to answer, to what extent can Windows Defender detect malicious code where evasion techniques are used. To answer this question fully I have broken broken down the research questions into sub questions
+I will adopting an experimental methodology to answer, to what extent can Windows Defender detect malicious code where evasion techniques are used. To answer this question fully I have broken broken down the research questions into sub questions
 - 1) How well do off-the-shelf tools evade antivirus?
 - 2) What evasion techniques, if any can successfully evade antivirus?
-- 3) Is it feesable to handcraft payloads, as opposed to generation through tools.
+- 3) Is it feasible to handcraft payloads, as opposed to generation through tools.
 
 ## Environment
-In order to test the hypothesis, firstly an envrionment will need to be setup. The experimentation will be carried out within a labatory and using virtual machines hosted on (VMware Workstation 16) with the target running Windows 10 to the latest patch, and the attacker running Kali linux. The two machines will be connected through the same private NAT network device. Reasoning for this is to enable the two machines to freely communicate with one another using local IP addresses, ensuring that no other devices accidentally get infected with any generated payloads and that there are no external variables unaccounted for. (INSERT A FIGURE TO DEMONSTRATE THE CONNECTION) 
+In order to test the hypothesis, firstly an environment will need to be setup. The experimentation will be carried out within a labatory and using virtual machines hosted on (VMware Workstation 16) with the target running Windows 10 to the latest patch, and the attacker running Kali Linux. The two machines will be connected through the same private NAT network device. Reasoning for this is to enable the two machines to freely communicate with one another using local IP addresses, ensuring that no other devices accidentally get infected with any generated payloads and that there are no external variables unaccounted for. 
 
-<!-- will include a simple picture to demonstrate how the two machines are connected together -->
+![[NetworkConfig.png]]
 
-Kali linux comes with a wide range of pre-installed pen-testing applications and tools, due to the freedom that kali linux enables, this will also allow creation of malicious payloads without the risk of the operating system deleting any crucial work. As discussed above, the purpose of this research is focussing on the effectiveness of windows defender to when a malicious file is already present on the machine. Futhermore, the target will be infected by through the aid of pythons http server command.  `python -m http.server`. Through the usage of this command I will be able to setup a temporary local webserver from the attackers current directory, that enables the target machine to download any payloads that are created. This will be futher highlighted in the figure below (CREATE ANOTHER FIGURE LAZY BUM) 
+
+
+Kali Linux comes with a wide range of pre-installed pen-testing applications and tools, due to the freedom that kali Linux enables, this will also allow creation of malicious payloads without the risk of the operating system deleting any crucial work. As discussed above, the purpose of this research is focussing on the effectiveness of windows defender to when a malicious file is already present on the machine. Furthermore, the target will be infected by through the aid of pythons http server command.  `python -m http.server`. Through the usage of this command I will be able to setup a temporary local webserver from the attackers current directory, that enables the target machine to download any payloads that are created. This will be further highlighted in the figure below 
+![[WebserverUpload 1.png]]
 
 <!-- Talk about how the viruses will be tested; one at a time, how they will be evaluated, oh and the type of viruses that will be generated (RAT's) mainly reverse tcp bind. -->
-
+Using this configuration the attacker machine will be able to upload new iterations of any viruses created, in a secure fashion. This also replicates how a virus may be downloaded onto a machine in real world scenarios.
 ## Tools
 In this section i will discuss the tools and methods that will be employed to evaluate how well off-the-shelf tools evade antivirus. I have chosen a selection of well known and frequently updated tools for this section, this will hopefully give the best chance at evading antivirus.
 
@@ -152,6 +155,3 @@ The reason Veil has been selected is due to the contradictory results that were 
 ### Pe.Cloak.py
 ### Msfvenom
 <!-- have more examples here -->
-
-<!-- More work needs to done on take aways
-Closing thoughts, research questions and future directions should be enough --> 
