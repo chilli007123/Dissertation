@@ -14,8 +14,19 @@
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "3fca48eca3a837c7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.11"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -138,7 +149,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3cb5f02fb068a4e1",
+  "active": "3fca48eca3a837c7",
   "lastOpenFiles": [
     "Dissertation MD FILE.md",
     "Citations for bib file.md",
