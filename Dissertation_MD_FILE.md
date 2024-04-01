@@ -152,6 +152,10 @@ The reason Veil has been selected is due to the contradictory results that were 
 
 <!-- Talk more about this once you have done some experimentation -->
 
-### Pe.Cloak.py
+### AVET
+Anti-Virus evasion tool (AVET) is a popular tool that is commonly used by pen-testers. Again this tool is accessible through Github and can be 
 ### Msfvenom
+
+### Scarecrow
+
 <!-- have more examples here -->
