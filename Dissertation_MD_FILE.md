@@ -169,6 +169,26 @@ After experimenting with off-the-shelf tools, a handcrafted tool will be made an
 
 # Results and discussion
 
-## Off-the-shelf tools
+## Msfvenom results
+
+|              Encoding | Compiled | AV OFF | AV ON | TotalAV Score |
+| --------------------: | -------- | ------ | ----- | ------------- |
+|                   RAW | True     | True   | False | 57            |
+|            cmd/base64 |          |        |       |               |
+|             cmd/brace |          |        |       |               |
+|              cmd/echo |          |        |       |               |
+|        cmd/generic/sh |          |        |       |               |
+|               cmd/ifs |          |        |       |               |
+|              cmd/perl |          |        |       |               |
+| cmd/powershell_base64 |          |        |       |               |
+|     cmd/printf_php_mq |          |        |       |               |
+|         generic/eicar |          |        |       |               |
+|          generic/none |          |        |       |               |
+|      mipsbe/byte_xori |          |        |       |               |
+|        mispbe/longxor |          |        |       |               |
+|      mipsle/byte_xori |          |        |       |               |
+|        misple/longxor |          |        |       |               |
+|            php/base64 |          |        |       |               |
+|                       |          |        |       |               |
 
 
