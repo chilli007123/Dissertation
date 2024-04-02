@@ -3,7 +3,8 @@ title: Chilli Awesome Dissertation
 author: Charles Graham
 sid: 12345
 supervisor: Dan Goldsmith
-date: 12/12/2024
+#date: 12/12/2024
+ethics_number: xxxxxx
 
 toc: true
 lof: true
@@ -40,13 +41,16 @@ dedication: |
     Like the abstract anything in the block wll be kept
     
     Would lke to thank my parents, god, the family cat / dog.
-    Obviously Dan because he is awesome
+    Obviously Dan because he is awesome.
+
+    And Kai becuase he is aswsome too
     
     Again,  not sure about the layout, but we can fix that.
     
+
 ---
 
 
 ```{.include}
-Dissertation MD FILE.md
+Dissertation_MD_FILE.md
 ```
