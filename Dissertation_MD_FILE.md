@@ -222,5 +222,59 @@ After experimenting with off-the-shelf tools, a handcrafted tool will be made an
 |            x86/unicode_upper | True     | False  | False | 55            |
 |              x86/xor_dynamic | True     | False  | False | 56            |
 |                 x86/xor_poly | True     | True   | False | 57            |
-The results produced in (TABLE 2) are as expected. The results show that the encoding methods used by msfvenom are ineffective and hiding the payload from Windows Defender, with all 46 encoding methods used, not a single one was able to evade AV. This could be for a multitude of reasons. However I believe that due of the popularity of Msfvenom, antivirus developers have had a close eye on any advancements and encoding methods that are employed, and therefore patch up systems before they can be exploited. When testing the different payloads, it was interesting to see that all iterations got picked up instantly by AV, most likely this was the signature based detection doing its job and matching the signatures of the overly used payloads and deleting them before they could be downloaded onto the system. Lastly, out of 72 different Antiviruses the lowest score received was 49 using x64/shikata_ga_nai. This is a very high score, but this was expected due to the popularity of the tool.
+The results produced in (TABLE 1) are as expected. The results show that the encoding methods used by msfvenom are ineffective and hiding the payload from Windows Defender, with all 46 encoding methods used, not a single one was able to evade AV. This could be for a multitude of reasons. However I believe that due of the popularity of Msfvenom, antivirus developers have had a close eye on any advancements and encoding methods that are employed, and therefore patch up systems before they can be exploited. When testing the different payloads, it was interesting to see that all iterations got picked up instantly by AV, most likely this was the signature based detection doing its job and matching the signatures of the overly used payloads and deleting them before they could be downloaded onto the system. Lastly, out of 72 different Antiviruses the lowest score received was 49 using x64/shikata_ga_nai. This is a very high score, but this was expected due to the popularity of the tool.
 
+### MSI encoding
+
+|                     Encoding | Compiled | AV OFF | AV ON | TotalAV Score |
+| ---------------------------: | -------- | ------ | ----- | ------------- |
+|                          RAW | True     | True   | False | 38            |
+|                   cmd/base64 | True     | True   | False | 39            |
+|                    cmd/brace | True     | True   | False | 39            |
+|                     cmd/echo | True     | True   | False | 41            |
+|               cmd/generic/sh | True     | True   | False | 41            |
+|                      cmd/ifs | True     | True   | False | 40            |
+|                     cmd/perl | True     | True   | False | 41            |
+|        cmd/powershell_base64 | True     | True   | False | 39            |
+|            cmd/printf_php_mq | True     | True   | False | 41            |
+|                generic/eicar | True     | False  | False | 40            |
+|                 generic/none | True     | True   | False | 41            |
+|             mipsbe/byte_xori | True     | False  | False | 38            |
+|               mispbe/longxor | False    | False  | False | -             |
+|             mipsle/byte_xori | True     | False  | False | 42            |
+|               misple/longxor | True     | False  | False | 42            |
+|                   php/base64 | True     | False  | False | 44            |
+|                  ppc/longxor | True     | False  | False | 39            |
+|              ppc/longxor_tag | True     | False  | False | 42            |
+|                  ruby/base64 | True     | False  | False | 42            |
+|            sparc/longxor_tag | True     | False  | False | 43            |
+|                      x64/xor | True     | False  | False | 37            |
+|              x64/xor_context | True     | False  | False | 40            |
+|              x64/xor_dynamic | True     | True   | False | 40            |
+|             x64/zutto_dekiru | True     | False  | False | 44            |
+|                  x86/add_sub | True     | False  | False | 39            |
+|              x86/alpha_mixed | True     | True   | False | 42            |
+|              x86/alpha_upper | True     | True   | False | 42            |
+| x86/avoid_underscore_tolower | True     | False  | False | 39            |
+|       x86/avoid_utf8_tolower | False    | False  | False | -             |
+|                   x86/bloxor | True     | True   | False | 40            |
+|             x86/bmp_polyglot | False    | False  | False | -             |
+|          x86/call4_dword_xor | True     | True   | False | 42            |
+|            x86/context_cpuid | True     | False  | False | 40            |
+|             x86/context_stat | True     | False  | False | 43            |
+|             x86/context_time | True     | False  | False | 42            |
+|                x86/countdown | True     | True   | False | 40            |
+|              x86/fnstenv_mov | True     | True   | False | 43            |
+|        x86/jmp_call_additive | True     | True   | False | 41            |
+|                 x86/nonalpha | False    | False  | False | -             |
+|                 x86/nonupper | True     | False  | False | 41            |
+|                  x86/opt_sub | True     | False  | False | 38            |
+|                  x86/service | True     | False  | False | 37            |
+|           x86/shikata_ga_nai | True     | True   | False | 41            |
+|        x86/single_static_bit | True     | True   | False | 39            |
+|            x86/unicode_mixed | True     | False  | False | 41            |
+|            x86/unicode_upper | True     | False  | False | 42            |
+|              x86/xor_dynamic | True     | True   | False | 40            |
+|                 x86/xor_poly | True     | True   | False | 41            |
+
+The results in Table 2 are 
