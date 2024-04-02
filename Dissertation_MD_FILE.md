@@ -82,20 +82,17 @@ Overall these protection mechanisms all have their strengths and weaknesses. For
 As I mentioned in section 1, computer malware infects thousands of companies per day [@jovanovic2023malware] "Every minute, four companies fall victim to ransomware attacks". With more research being poured into discovering the techniques that black hat hackers may use to create a backdoor into a machine, the better chance we have at developing prevention techniques that quarantine these unwanted programs. If we could stop the effectiveness of computer viruses then this would enable a higher level of confidentiality and data integrity, saving companies compensation claims and loss of reputation.
 
 As virus detection techniques have evolved over the years so has the need to create tools that bypass these techniques. The author [@garba2019evaluating] says "Malwares generated using tools such as Metasploit are easily detected nowadays due to the techniques used by antiviruses" As a direct reaction tools have had to evolve to keep up with antivirus detection. In this section I will discuss some popular techniques that malicious users may use to bypass AV.
-
-### Encryption
+#### Encryption
 The author [@rad2012camouflage] defines encryption as the earliest and simplest method employed by the malware programmers to achieve their goal. The first known encrypted virus appeared in 1987 and was named, Cascade. Encryption can be achieved in many ways, a simple way a payload can be encrypted is through the reversable XOR function. Since this paper more tools have developed such as msfvenom which will take a payload and encrypt using a specified algorithm.
-
-### Obfuscation
+#### Obfuscation
 "General code obfuscation techniques aim to confuse the understanding of the way in which a program functions. These can range from simple layout transformations to complicated changes in control and data flow" [@balakrishnan2005code]. When employed into bypassing antivirus, Obfuscation can be used to hide the intentions of an executable. As obfuscation transforms or changes the code, this in turn changes the signature of a file, making antivirus software unable to detect the executable through signature based detection. Like encryption, due to more detection mechanisms, obfuscation would have to be used in compliment to another evasion technique to have a chance of being successful. Although bypassing one detection is a step in the right direction, it is not enough to evade AV on its own.
-
-### Morphic coding 
+#### Morphic coding 
 Morphic coding techniques such as polymorphism and metamorphism aim to change their own code each time they run. With polymorphism adapting its appearance with simple techniques such as encryption, data appending or prepending. [@aliexploring] states that polymorphism allows objects or methods to operate in multiple forms and adapt to different conditions within a programs code. One problem identified by [@konstantinou2008metamorphic] is that polymorphic viruses eventually have to decrypt their constant body in memory in order to function, advanced detection techniques can wait for the virus to decrypt itself and then detect it reliably. On the other hand, Metamorphic viruses have the ability to transform their code after each run. Through the use of obfuscation techniques metamorphic viruses spawn hundreds of iterations of a virus with the same core functions. Some more advanced metamorphic viruses may also have the ability to alter their execution depending on whether they are in a sandboxed environment. This is later confirmed in [@andryani2023detect] paper, where they inform us that Malware dodge sandbox is another type of malware that can tell if it is in a sandbox or virtual machine.
 #### Off-The-Shelf Tools
 There are tools out there such as Veil, Avet, TheFatRat and PeCloak.py that aim to quickly create and undetectable executable file that can infect a victims device. Although these tools are quick and easy to use, the results generated from them are usually sub-par. This is due AV developers being able to watch the development of the tools and patch any exploits that may have been found by the tool developers. Although as some of these tools allow you to highly customise your payload, this may open a window of opportunity in that AV may take a while to detect the malicious file. 
 
-## Papers
-### Paper 1
+### Papers
+#### Paper 1
 The author [@kaushik2022systematic] of ‘A systematic approach for evading antiviruses using malware obfuscation’. The paper is from 2022 and describes the process they go through to obfuscate a payload with Graffiti and Veil-Evasion. The purpose of this research is to identify methods that can be used to bypass the antivirus, while mainly focussing on tools such as Veil-Evasion and Graffiti. Similarly to my proposed project the author starts trying to evade antivirus by using readily available tools such as Graffiti and Veil-Evasion. According to the results, Graffiti failed most of the time to avoid the antivirus, and was not effective. However, through the use of Veil-Evasion and a .bat to .exe converter they were able to produce a payload that gave remote root access to a windows machine (bypassing Windows 10 Defender). This is a significant result as it demonstrates that even off-the-shelf tools can be used to bypass Windows 10 Defender. Reviewing this paper gives an insight to the techniques I will need to follow to generate the same results and the methodology I should follow.
 
 The paper also goes into a good depth on how the different tools behave and the outputs they produce. Such as Veil can output the obfuscated payload as a .py, .bat or .exe file. This is important to understand as these tools may be relied upon to create payloads for my future experiments.  In conjunction with using Veil and Graffiti the author also uses “If-else Deletion” to understand which portion of the code is required for the payload to run as intended. They also utilise “Dead code insertion” This allows the payload to be filled with code that won’t affect the execution of the payload but also differs the signature from the genuine payload.
@@ -106,7 +103,7 @@ One strength of this paper is that the conclusion provides an optimal approach o
 
 In conclusion this paper has a strong connection with my proposal. The paper has some crucial methodology that is relevant to the approach that I intend to take. The overall results demonstrate that evasion of modern day antivirus systems is possible through the use of readily available tools. The paper is also very clear on the steps that need to be taken to reach the same results, and through this I will do my best to firstly replicate the results and then build upon them.
 
-### Paper 2
+#### Paper 2
 In contrast to the results of this work [@aminu2020evaluating] found concluded that the best evasion tools were Avet and PeCloak.py. "Bypassed most of the selected antivirus by 83% and 67% respectively". These findings are super interesting to us as a later study by [@kaushik2022systematic] was able to bypass Windows 10 defender with Veil. This change in results could be caused by the development in the tools used. [@aminu2020evaluating] aimed to evaluate the effectiveness of selected antivirus systems through the use of evasion tools such as, Veil 3.0, PeCloak.py, Shellter, and a Fat Rat. These tests where conducted against a windows platform. Although these results are older and occurred while testing different antivirus systems to [@kaushik2022systematic] the results are still relevant and need to be understood. Since, Windows Defender and the tools used in this experiment have arguably advanced. This also relates back to section 1, where I emphasise the need for more research to be done over antivirus systems and their counterpart. With technology evolving at exponential rates, so are the tools and techniques that create unwanted programs and leave backdoors into our machines. 
 
 Interestingly, the author talks about how Avet was able to evade so many of the antivirus systems. It seems the main reason for this is the ability for Avet to avoid sandboxing and emulation. "Avet includes two tools, avet.exe and AV evasion technique to avoid sandboxing and emulation". This result opens up many opportunities to explore, if the technique still functions this would allow more simplistic but effective payloads and Windows Defender would have to rely on more dated detection techniques such as signature based detections. 
@@ -115,7 +112,7 @@ Some strengths of this paper are that the author used a virtual environment VM t
 
 In conjunction with [@kalogranis2018antivirus] these authors also conclude that results could be more substantial if the use of hand crafted payloads were employed. This would stop the signature based detection system from flagging files that have come from readily available tools and slow down the speed to which antivirus flags the file as suspicious. Although this is a farfetched idea to hand create every virus, it also demonstrates how the coding techniques such as polymorphic and metamorphic systems could be employed to create more devastating strains of computer virus. 
 
-### Paper 3
+#### Paper 3
 
 https://ieeexplore.ieee.org/abstract/document/9519480
 
@@ -151,15 +148,27 @@ Kali Linux comes with a wide range of pre-installed pen-testing applications and
 ![[WebserverUpload 1.png]]
 
 <!-- Talk about how the viruses will be tested; one at a time, how they will be evaluated, oh and the type of viruses that will be generated (RAT's) mainly reverse tcp bind. -->
-Using this configuration the attacker machine will be able to upload new iterations of any viruses created, in a secure fashion. This also replicates how a virus may be downloaded onto a machine in real world scenarios.
+Using this configuration the attacker machine will be able to upload new iterations of any viruses created, in a secure fashion. This also replicates how a virus may be downloaded onto a machine in real world scenarios. When downloading the payloads, antivirus will be turned off to allow testing to be conducted on whether the payload firstly works and connects back to the attacker machine, doing this will allow more accurate results to be concluded. After testing whether payloads run without AV turned on, non-working payloads will be discarded and then AV will be turned on allowing it to detect any payloads that are left on the machine. 
+Payloads that remain on the machine will then be tested further on whether they run with AV turned on. 
 ## Tools
-In this section i will discuss the tools and methods that will be employed to evaluate how well off-the-shelf tools evade antivirus. I have chosen a selection of well known and frequently updated tools for this section, this will hopefully give the best chance at evading antivirus.
-
-### Vail 3.1
+In this section I will discuss the tools and methods that will be employed to evaluate how well off-the-shelf tools evade antivirus. I have chosen a selection of well known and frequently updated tools for this section, this will hopefully give the best chance at evading antivirus. By using off-the-shelf tools we we be able to actively answer one of our research questions being "How well do off-the-shelf tools evade antivirus?" while also uncovering methods that can be used in hand crafted payloads to better stand a chance at evading AV.
+### Msfvenom
+Msfvenom is probably one of the most well known tools when it comes to generating payloads for platforms such as, Windows, Mac, and Linux machines. With many generic payloads within its database, msfvenom is easy to use and can generate payloads to very specific needs. With all previous experiments discussed above using msfvenom, it seems the best way to test the effectiveness of Windows Defender is to see how its developed over the years in combatting payloads from this off-the-shelf tool. Msfvenom will also be used in conjunction with some of the other tools discussed below, to create payloads where needed.
+### Veil 3.1
 The reason Veil has been selected is due to the contradictory results that were generated over the span of a few years in the section above. Veil–Evasion is a famous framework written in python. We can utilize this framework to produce payloads that can sidestep most of AVs [@kaushik2022systematic]. 
 
 <!-- Talk more about this once you have done some experimentation -->
+### AVET
+Anti-Virus evasion tool (AVET) is a popular tool that is commonly used by pen-testers. Again this tool is accessible through GitHub and utilises the python language. AVET comes with many different payloads and evasion techniques, such as sandbox evasion which make it a great tool to conduct our experiment with.
 
-### Pe.Cloak.py
-### Msfvenom
+### Scarecrow
+The last tool to be used is Scarecrow. This tool is fairly recent compared to the other tools discussed, and had its first commit on March 3rd, 2021. Scarecrow has an interesting certificate signing capability which allows the malicious file to be fake-signed by organisations like Microsoft. Scarecrow cannot work on its own and therefore we will be generating payloads from Msfvenom and saving them in a `.bin` format so that we can then utilise the encryption and evasion techniques of Scarecrow. Scarecrow will allow us to output a multitude of different file types, ranging from exe, to DLL files. Giving us the best chance of evading AV, and generating a consistent payload.
 <!-- have more examples here -->
+
+## Handcrafted payload
+After experimenting with off-the-shelf tools, a handcrafted tool will be made and tested against windows AV. This will be done by the python language and using a Py to exe converter to generate and executable payload. The hand crafted payload will communicate to the victim machine via the usage of sockets over a reverse shell type connection, and return relevant information to the attacker machine.
+
+# Results and discussion
+
+
+
