@@ -381,12 +381,38 @@ The results were further reflected in the TotalAV score, with the lowest scoring
 
 ## Scarecrow results
 
-|         File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
-| -----------: | -------: | -------- | ------ | ----- | ---------------- |
-|  Outlook.exe |          |          |        |       |                  |
-| Onedrive.exe |          |          |        |       |                  |
-|              |          |          |        |       |                  |
+|           File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
+| -------------: | -------: | -------- | ------ | ----- | ---------------- |
+|    Outlook.exe |      AES | True     | True   | False |                  |
+|   Onedrive.exe |      AES | True     | True   | False |                  |
+|       Word.exe |      AES | True     | True   | False |                  |
+|      Excel.exe |      AES | True     | True   | False |                  |
+|    Onenote.exe |      AES | True     | True   | False |                  |
+| Powerpoint.exe |      AES | True     | True   | False |                  |
 
-| File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
-| ---: | -------: | -------- | ------ | ----- | ---------------- |
-|      |          | True     | True   | False | 24               |
+|           File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
+| -------------: | -------: | -------- | ------ | ----- | ---------------- |
+|    Outlook.exe |    ELZMA | True     | True   | False |                  |
+|   Onedrive.exe |    ELZMA | True     | True   | False |                  |
+|       Word.exe |    ELZMA | True     | True   | False |                  |
+|      Excel.exe |    ELZMA | True     | True   | False |                  |
+|    Onenote.exe |    ELZMA | True     | True   | False |                  |
+| Powerpoint.exe |    ELZMA | True     | True   | False |                  |
+
+|            File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
+| --------------: | -------: | -------- | ------ | ----- | ---------------- |
+|    Datetime.cpl |      AES | True     | True   | True  | 17               |
+|     Desktop.cpl |      AES | True     | True   | True  | 16               |
+|      Irprop.cpl |      AES | True     | True   | True  | 16               |
+| Netfirewall.cpl |      AES | True     | True   | True  | 16               |
+|      Tablet.cpl |      AES | True     | True   | True  | 16               |
+|      Winsec.cpl |      AES | True     | True   | True  | 18               |
+
+|          File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
+| ------------: | -------: | -------- | ------ | ----- | ---------------- |
+| Appwizard.cpl |      AES | True     | True   | True  | 17               |
+|  Datetime.cpl |      AES | True     | True   | True  | 15               |
+|   Mimosys.cpl |      AES | True     | True   | True  | 16               |
+|       Ncp.cpl |      AES | True     | True   | True  | 15               |
+| Telephone.cpl |      AES | True     | True   | True  | 17               |
+|    Winsec.cpl |      AES | True     | True   | True  | 17               |
