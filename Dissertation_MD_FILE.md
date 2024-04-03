@@ -407,6 +407,7 @@ The results were further reflected in the TotalAV score, with the lowest scoring
 | Netfirewall.cpl |      AES | True     | True   | True  | 16               |
 |      Tablet.cpl |      AES | True     | True   | True  | 16               |
 |      Winsec.cpl |      AES | True     | True   | True  | 18               |
+The results in TABLE [WHAT TABLE LOL] demonstrate the clear defeat in Windows defender, with all 6 payloads successfully defeating windows defender and connecting back to the attacker machine. From there full control was granted and any commands could be sent to the victim machine. With the VirusTotal scores also being very low it is clear to see that this type of evasion is not very well documented and protected against. The payloads above were creating by using the flags `-encryptionmode AES -domain www.apple.com -obfu -Loader control -Evasion Disk` The main two flags to take note of are the Loader and Evasion methods employed. As mentioned above in Msfvenoms results, Windows defender performs significantly worse when defending against payloads in unfamiliar formats. This change in the payload type could be what tricked the AV into trusting the un-legitimate CPL file. Each payload above was tested 3 times to ensure the reliability of the results generated, all produced the same results each time.
 
 |          File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
 | ------------: | -------: | -------- | ------ | ----- | ---------------- |
@@ -416,3 +417,4 @@ The results were further reflected in the TotalAV score, with the lowest scoring
 |       Ncp.cpl |      AES | True     | True   | True  | 15               |
 | Telephone.cpl |      AES | True     | True   | True  | 17               |
 |    Winsec.cpl |      AES | True     | True   | True  | 17               |
+Further testing was done with scarecrow to look for any successful patterns in payload generation. Table [ AGAIN FIND OUT THE TABLE NUMBER] shows another successful evasion from all 6 payloads. Using similar 
