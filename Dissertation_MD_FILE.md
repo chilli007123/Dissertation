@@ -325,9 +325,10 @@ The results in Table 2 show that Windows defender, yet again was unable to be ev
 |                 x86/nonupper | True     | False  | False | 52            |
 |                  x86/opt_sub | True     | False  | False | 55            |
 |                  x86/service | True     | False  | False | 57            |
-|           x86/shikata_ga_nai | True     | True   | False | 5             |
-|        x86/single_static_bit | True     | True   | False |               |
-|            x86/unicode_mixed | True     | False  | False |               |
-|            x86/unicode_upper | True     | False  | False |               |
-|              x86/xor_dynamic | True     | True   | False |               |
-|                 x86/xor_poly | True     | True   | False |               |
+|           x86/shikata_ga_nai | True     | True   | False | 56            |
+|        x86/single_static_bit | True     | True   | False | 57            |
+|            x86/unicode_mixed | True     | False  | False | 56            |
+|            x86/unicode_upper | True     | False  | False | 54            |
+|              x86/xor_dynamic | True     | True   | False | 56            |
+|                 x86/xor_poly | True     | True   | False | 56            |
+The results in Table 3 are very similar to that of Table 1. It seems that even when hiding the payload within another program antivirus still has no problem detecting the malicious code. Again once the payloads were loaded onto the victim machine, they were instantly picked up by AV and deleted, therefore windows defender effectively stopped all payloads. Although the exe used (regedit) is probably quite a popular choice when using a program as a template, it is interesting to see how efficiently antivirus picks up on the malicious code within a program and deletes it. 
