@@ -424,4 +424,6 @@ The results in Table 7 demonstrate the clear defeat in Windows defender, with al
 Further testing was done with scarecrow to look for any successful patterns in payload generation. Table 8 shows another successful evasion from all 6 payloads. Using similar flags to the previous iterations of payloads the only change being `-Evasion Known DLL`. It seems that the flags used with small changes have the ability to create many working payloads. The results generated above were created using a very specific evasion and obfuscation techniques so we can be positive that there are more "winning" payloads to be found. 
 
 ### Overview of Scarecrow results
-Overall Scarecrow was very successful at generating working payloads to evade Windows Defender. Using different payload types and DLL evasions seemed to be the key factor in enabling this. 
+Overall Scarecrow was very successful at generating working payloads to evade Windows Defender. Using different payload types and DLL evasions seemed to be the key factor in enabling this and tricking Defender into believing the legitimacy of CPL files. With all 12 CPL files providing a reverse shell it is very apparent that scarecrow is an effective way at evading Defender. 
+
+(I DONT KNOW WHAT TO PUT HERE LOL)
