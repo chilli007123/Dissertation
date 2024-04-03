@@ -383,12 +383,13 @@ The results were further reflected in the TotalAV score, with the lowest scoring
 
 |           File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
 | -------------: | -------: | -------- | ------ | ----- | ---------------- |
-|    Outlook.exe |      AES | True     | True   | False |                  |
-|   Onedrive.exe |      AES | True     | True   | False |                  |
-|       Word.exe |      AES | True     | True   | False |                  |
-|      Excel.exe |      AES | True     | True   | False |                  |
-|    Onenote.exe |      AES | True     | True   | False |                  |
-| Powerpoint.exe |      AES | True     | True   | False |                  |
+|        Cmd.exe |      AES | True     | True   | False | 35               |
+|    Outlook.exe |      AES | True     | True   | False | 35               |
+|   Onedrive.exe |      AES | True     | True   | False | 36               |
+|       Word.exe |      AES | True     | True   | False | 34               |
+|      Excel.exe |      AES | True     | True   | False | 36               |
+|    Onenote.exe |      AES | True     | True   | False | 34               |
+| Powerpoint.exe |      AES | True     | True   | False | 35               |
 
 |           File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
 | -------------: | -------: | -------- | ------ | ----- | ---------------- |
