@@ -341,36 +341,37 @@ On the whole, msfvenom failed to create a single payload that evaded Windows Def
 ## Avet results
 |                      Encoding | Compiled | AV OFF | AV ON | TotalAV Score |
 | ----------------------------: | -------- | ------ | ----- | ------------- |
-|                           RAW |          |        |       |               |
-|         check_fast_forwarding | True     | True   | False | 57            |
-|         computation_fibonacci | True     | True   | False | 57            |
-|   computation_timed_fibonacci | True     | True   | False | 52            |
-|              evasion_by_sleep | True     | True   | False | 55            |
-|         fopen_sandbox_evasion | True     | False  | False |               |
-|                 get_bios_info | True     | True   | False |               |
-|           get_computer_domain | True     | True   | False |               |
-|                 get_cpu_cores | True     | True   | False |               |
-|                  get_eventlog | True     | True   | False |               |
-|              get_install_date | True     | True   | False |               |
-|             get_num_processes | True     | True   | False |               |
-|             get_registry_size | True     | False  | False |               |
-|          get_standard_browser | True     | True   | False |               |
-|                 get_tickcount | True     | True   | False |               |
-|                       get_usb | True     | True   | False |               |
-| gethostbyname_sandbox_evasion | False    | True   | False |               |
-|             has_background_wp | True     | True   | False |               |
-|                    has_folder | True     | False  | False |               |
-|             has_network_drive | True     | False  | False |               |
-|              has_process_exit | False    | True   | False |               |
-|            has_public_desktop | True     | True   | False |               |
-|              has_revent_files | True     | False  | False |               |
-|               has_recycle_bin | True     | True   | False |               |
-|                  has_username | True     | False  | False |               |
-|                    has_vm_mac | False    | False  | False |               |
-|                 has_vm_regkey | True     | False  | False |               |
-|                  hide_console | True     | True   | False |               |
-|           interaction_getchar | True     | True   | False |               |
-|          interaction_ msg_box | True     | True   | False |               |
-|      interaction_system_pause | True     | True   | False |               |
-|           is_debugger_present | True     | True   | False |               |
-|                 sleep_by_ping | True     | True   | False |               |
+|                           RAW | True     | True   | False | 24            |
+|         check_fast_forwarding | True     | True   | False | 14            |
+|         computation_fibonacci | True     | True   | False | 24            |
+|   computation_timed_fibonacci | True     | True   | False | 24            |
+|              evasion_by_sleep | True     | True   | False | 14            |
+|         fopen_sandbox_evasion | True     | False  | False | 13            |
+|                 get_bios_info | True     | True   | False | 14            |
+|           get_computer_domain | True     | True   | False | 14            |
+|                 get_cpu_cores | True     | True   | False | 24            |
+|                  get_eventlog | True     | True   | False | 13            |
+|              get_install_date | True     | True   | False | 13            |
+|             get_num_processes | True     | True   | False | 13            |
+|             get_registry_size | True     | False  | False | 13            |
+|          get_standard_browser | True     | True   | False | 14            |
+|                 get_tickcount | True     | True   | False | 14            |
+|                       get_usb | True     | True   | False | 14            |
+| gethostbyname_sandbox_evasion | False    | False  | False | -             |
+|             has_background_wp | True     | True   | False | 13            |
+|                    has_folder | True     | False  | False | 13            |
+|             has_network_drive | True     | False  | False | 13            |
+|              has_process_exit | False    | False  | False | -             |
+|            has_public_desktop | True     | True   | True  | 13            |
+|              has_revent_files | True     | False  | False | 11            |
+|               has_recycle_bin | True     | True   | False | 14            |
+|                  has_username | True     | False  | False | 13            |
+|                    has_vm_mac | False    | False  | False | -             |
+|                 has_vm_regkey | True     | False  | False | 13            |
+|                  hide_console | True     | True   | False | 15            |
+|           interaction_getchar | True     | True   | False | 14            |
+|          interaction_ msg_box | True     | True   | False | 24            |
+|      interaction_system_pause | True     | True   | False | 14            |
+|           is_debugger_present | True     | True   | False | 24            |
+|                 sleep_by_ping | True     | True   | False | 14            |
+The results shown in Table 3 are very surprising. On the whole AVET did very well at hiding the file on the computer. With about 1/3 of the payloads remaining on the machine after Antivirus was turned on, because of the sandboxing protections that come with Avet this allowed the payloads to go undetectable until they were run. 
