@@ -337,3 +337,40 @@ The results in Table 3 are very similar to that of Table 1. It seems that even w
 
 ### Overview of Msfvenom results
 On the whole, msfvenom failed to create a single payload that evaded Windows Defender. Msfvenom is a very popular tool and therefore it could be expected that Antivirus developers like Microsoft would keep a close eye on it. Msfvenom is probably one of the most customisable payload generation tools available, and therefore it is a backbone for the community. However although there are many options, its not foreseeable that msfvenom can generate a payload to evade Windows Defender by itself. Therefore if a payload is to work, it would need to have some other form of evasion technique employed that is not commonly found in a well known tool such as msfvenom.
+
+## Avet results
+|                      Encoding | Compiled | AV OFF | AV ON | TotalAV Score |
+| ----------------------------: | -------- | ------ | ----- | ------------- |
+|                           RAW |          |        |       |               |
+|         check_fast_forwarding | True     | True   | False | 57            |
+|         computation_fibonacci | True     | True   | False | 57            |
+|   computation_timed_fibonacci | True     | True   | False | 52            |
+|              evasion_by_sleep | True     | True   | False | 55            |
+|         fopen_sandbox_evasion | True     | False  | False |               |
+|                 get_bios_info | True     | True   | False |               |
+|           get_computer_domain | True     | True   | False |               |
+|                 get_cpu_cores | True     | True   | False |               |
+|                  get_eventlog | True     | True   | False |               |
+|              get_install_date | True     | True   | False |               |
+|             get_num_processes | True     | True   | False |               |
+|             get_registry_size | True     | False  | False |               |
+|          get_standard_browser | True     | True   | False |               |
+|                 get_tickcount | True     | True   | False |               |
+|                       get_usb | True     | True   | False |               |
+| gethostbyname_sandbox_evasion | False    | True   | False |               |
+|             has_background_wp | True     | True   | False |               |
+|                    has_folder | True     | False  | False |               |
+|             has_network_drive | True     | False  | False |               |
+|              has_process_exit | False    | True   | False |               |
+|            has_public_desktop | True     | True   | False |               |
+|              has_revent_files | True     | False  | False |               |
+|               has_recycle_bin | True     | True   | False |               |
+|                  has_username | True     | False  | False |               |
+|                    has_vm_mac | False    | False  | False |               |
+|                 has_vm_regkey | True     | False  | False |               |
+|                  hide_console | True     | True   | False |               |
+|           interaction_getchar | True     | True   | False |               |
+|          interaction_ msg_box | True     | True   | False |               |
+|      interaction_system_pause | True     | True   | False |               |
+|           is_debugger_present | True     | True   | False |               |
+|                 sleep_by_ping | True     | True   | False |               |
