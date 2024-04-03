@@ -417,4 +417,6 @@ The results in TABLE [WHAT TABLE LOL] demonstrate the clear defeat in Windows de
 |       Ncp.cpl |      AES | True     | True   | True  | 15               |
 | Telephone.cpl |      AES | True     | True   | True  | 17               |
 |    Winsec.cpl |      AES | True     | True   | True  | 17               |
-Further testing was done with scarecrow to look for any successful patterns in payload generation. Table [ AGAIN FIND OUT THE TABLE NUMBER] shows another successful evasion from all 6 payloads. Using similar flags to the previous iterations of payloads the only change being `-Evasion Known DLL`  
+Further testing was done with scarecrow to look for any successful patterns in payload generation. Table [ AGAIN FIND OUT THE TABLE NUMBER] shows another successful evasion from all 6 payloads. Using similar flags to the previous iterations of payloads the only change being `-Evasion Known DLL`. It seems that the flags used with small changes have the ability to create many working payloads. The results generated above were created using a very specific evasion and obfuscation techniques so we can be positive that there are more "winning" payloads to be found. 
+
+### Overview of Scarecrow results
