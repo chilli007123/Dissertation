@@ -277,57 +277,57 @@ The results produced in (TABLE 1) are as expected. The results show that the enc
 |              x86/xor_dynamic | True     | True   | False | 40            |
 |                 x86/xor_poly | True     | True   | False | 41            |
 
-The results in Table 2 show that Windows defender, yet again was unable to be evaded by msfvenom. With all 46 encryption methods being used on the MSI file type, all got deleted as soon as the file was downloaded onto the machine. Again this is most likely the word of the signature based detection. With so many people potentially using this tool, many virus iterations would have been committed to the signatures database, preventing further use of any payload created. The results also demonstrate a dramatic decrease in detection rates for Antivirus products as a whole, with a 20% average decrease in detection rates due to the extension type being an MSI instead of EXE is alarming. Like suggested in (INSERT REFERENCE HERE) work, originality is the key to success when generating a payload to defeat AV. with popular methods and extensions being highly monitored it is easier to fly under the radar with less obvious and unusual methods.
+The results in Table 2 show that Windows defender, yet again was unable to be evaded by msfvenom. With all 46 encryption methods being used on the MSI file type, all got deleted as soon as the file was downloaded onto the machine. Again this is most likely the word of the signature based detection. With so many people potentially using this tool, many virus iterations would have been committed to the signatures database, preventing further use of any payload created. The results also demonstrate a dramatic decrease in detection rates for Antivirus products as a whole, with a 20% average decrease in detection rates due to the extension type being an MSI instead of EXE is alarming. Like suggested in (INSERT REFERENCE HERE) work, originality is the key to success when generating a payload to defeat AV. with popular methods and extensions being highly monitored it is easier to fly under the radar with less obvious and unusual methods. The lowest score recorded was shared 37 between x86/service and x64/xor. Its also interesting to note that the RAW payload with no encoding scored lower than majority of encoders. Again this could be the result of antiviruses being over saturated with payloads generated from msfvenom and therefore have no trouble detecting the overly used payloads.
 
 ### Templated EXE encoding
 
 |                     Encoding | Compiled | AV OFF | AV ON | TotalAV Score |
 | ---------------------------: | -------- | ------ | ----- | ------------- |
-|                          RAW | True     | True   | False | 38            |
-|                   cmd/base64 | True     | True   | False | 39            |
-|                    cmd/brace | True     | True   | False | 39            |
-|                     cmd/echo | True     | True   | False | 41            |
-|               cmd/generic/sh | True     | True   | False | 41            |
-|                      cmd/ifs | True     | True   | False | 40            |
-|                     cmd/perl | True     | True   | False | 41            |
-|        cmd/powershell_base64 | True     | True   | False | 39            |
-|            cmd/printf_php_mq | True     | True   | False | 41            |
-|                generic/eicar | True     | False  | False | 40            |
-|                 generic/none | True     | True   | False | 41            |
-|             mipsbe/byte_xori | True     | False  | False | 38            |
-|               mispbe/longxor | True     | True   | False | -             |
-|             mipsle/byte_xori | True     | False  | False | 42            |
-|               misple/longxor | False    | False  | False | 42            |
-|                   php/base64 | True     | False  | False | 44            |
-|                  ppc/longxor | True     | False  | False | 39            |
-|              ppc/longxor_tag | True     | False  | False | 42            |
-|                  ruby/base64 | True     | False  | False | 42            |
-|            sparc/longxor_tag | True     | False  | False | 43            |
-|                      x64/xor | True     | False  | False | 37            |
-|              x64/xor_context | True     | False  | False | 40            |
-|              x64/xor_dynamic | True     | True   | False | 40            |
-|             x64/zutto_dekiru | True     | False  | False | 44            |
-|                  x86/add_sub | True     | False  | False | 39            |
-|              x86/alpha_mixed | True     | True   | False | 42            |
-|              x86/alpha_upper | True     | True   | False | 42            |
-| x86/avoid_underscore_tolower | True     | False  | False | 39            |
+|                          RAW | True     | True   | False | 57            |
+|                   cmd/base64 | True     | True   | False | 57            |
+|                    cmd/brace | True     | True   | False | 52            |
+|                     cmd/echo | True     | True   | False | 55            |
+|               cmd/generic/sh | True     | True   | False | 57            |
+|                      cmd/ifs | True     | True   | False | 57            |
+|                     cmd/perl | True     | True   | False | 57            |
+|        cmd/powershell_base64 | True     | True   | False | 57            |
+|            cmd/printf_php_mq | True     | True   | False | 56            |
+|                generic/eicar | True     | False  | False | 34            |
+|                 generic/none | True     | True   | False | 56            |
+|             mipsbe/byte_xori | True     | False  | False | 56            |
+|               mispbe/longxor | True     | True   | False | 57            |
+|             mipsle/byte_xori | True     | False  | False | 56            |
+|               misple/longxor | False    | False  | False | -             |
+|                   php/base64 | True     | False  | False | 53            |
+|                  ppc/longxor | True     | False  | False | 55            |
+|              ppc/longxor_tag | True     | False  | False | 56            |
+|                  ruby/base64 | True     | False  | False | 56            |
+|            sparc/longxor_tag | True     | False  | False | 56            |
+|                      x64/xor | True     | False  | False | 55            |
+|              x64/xor_context | True     | True   | False | 56            |
+|              x64/xor_dynamic | True     | True   | False | 57            |
+|             x64/zutto_dekiru | True     | False  | False | 54            |
+|                  x86/add_sub | True     | False  | False | 56            |
+|              x86/alpha_mixed | True     | True   | False | 55            |
+|              x86/alpha_upper | True     | True   | False | 49            |
+| x86/avoid_underscore_tolower | True     | False  | False | 54            |
 |       x86/avoid_utf8_tolower | False    | False  | False | -             |
-|                   x86/bloxor | True     | True   | False | 40            |
+|                   x86/bloxor | True     | True   | False | 52            |
 |             x86/bmp_polyglot | False    | False  | False | -             |
-|          x86/call4_dword_xor | True     | True   | False | 42            |
-|            x86/context_cpuid | True     | False  | False | 40            |
-|             x86/context_stat | True     | False  | False | 43            |
-|             x86/context_time | True     | False  | False | 42            |
-|                x86/countdown | True     | True   | False | 40            |
-|              x86/fnstenv_mov | True     | True   | False | 43            |
-|        x86/jmp_call_additive | True     | True   | False | 41            |
+|          x86/call4_dword_xor | True     | True   | False | 55            |
+|            x86/context_cpuid | True     | False  | False | 57            |
+|             x86/context_stat | True     | False  | False | 57            |
+|             x86/context_time | True     | False  | False | 47            |
+|                x86/countdown | True     | True   | False | 56            |
+|              x86/fnstenv_mov | True     | True   | False | 56            |
+|        x86/jmp_call_additive | True     | True   | False | 57            |
 |                 x86/nonalpha | False    | False  | False | -             |
-|                 x86/nonupper | True     | False  | False | 41            |
-|                  x86/opt_sub | True     | False  | False | 38            |
-|                  x86/service | True     | False  | False | 37            |
-|           x86/shikata_ga_nai | True     | True   | False | 41            |
-|        x86/single_static_bit | True     | True   | False | 39            |
-|            x86/unicode_mixed | True     | False  | False | 41            |
-|            x86/unicode_upper | True     | False  | False | 42            |
-|              x86/xor_dynamic | True     | True   | False | 40            |
-|                 x86/xor_poly | True     | True   | False | 41            |
+|                 x86/nonupper | True     | False  | False | 52            |
+|                  x86/opt_sub | True     | False  | False | 55            |
+|                  x86/service | True     | False  | False | 57            |
+|           x86/shikata_ga_nai | True     | True   | False | 5             |
+|        x86/single_static_bit | True     | True   | False |               |
+|            x86/unicode_mixed | True     | False  | False |               |
+|            x86/unicode_upper | True     | False  | False |               |
+|              x86/xor_dynamic | True     | True   | False |               |
+|                 x86/xor_poly | True     | True   | False |               |
