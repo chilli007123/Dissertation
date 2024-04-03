@@ -401,7 +401,7 @@ The results were further reflected in the TotalAV score, with the lowest scoring
 |      Excel.exe |    ELZMA | True     | True   | False | 34               |
 |    Onenote.exe |    ELZMA | True     | True   | False | 34               |
 | Powerpoint.exe |    ELZMA | True     | True   | False | 33               |
-The results in table 5 and 6 are very similar.
+The results in Table 5 and 6 are very similar. With both using being signed by www.microsoft.com and generating very common Microsoft files. Although the payloads looked like genuine Microsoft files at first glance, they didnt make it past signature detection, being deleted almost instantly from the machine. With high VirusTotal scores both encoding techniques alone didnt provide sufficient evasion to get past AV. 
 
 |            File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
 | --------------: | -------: | -------- | ------ | ----- | ---------------- |
