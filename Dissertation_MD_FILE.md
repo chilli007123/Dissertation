@@ -246,9 +246,9 @@ After experimenting with off-the-shelf tools, a handcrafted tool will be made an
 |            x86/unicode_upper | True     | False  | False | 55               |
 |              x86/xor_dynamic | True     | False  | False | 56               |
 |                 x86/xor_poly | True     | True   | False | 57               |
-Table: Results of encoding on EXE payload {#tbl:exe}
+Table: Results of encoding on EXE payload \label{tab:exe}
 
-The results produced in Table @tbl:exe are as expected. The results show that the encoding methods used by msfvenom are ineffective and hiding the payload from Windows Defender, with all 46 encoding methods used, not a single one was able to evade AV. This could be for a multitude of reasons. However I believe that due of the popularity of Msfvenom, antivirus developers have had a close eye on any advancements and encoding methods that are employed, and therefore patch up systems before they can be exploited. When testing the different payloads, it was interesting to see that all iterations got picked up instantly by AV, most likely this was the signature based detection doing its job and matching the signatures of the overly used payloads and deleting them before they could be downloaded onto the system. Lastly, out of 72 different Antiviruses the lowest score received was 49 using x64/shikata_ga_nai. This is a very high score, but this was expected due to the popularity of the tool.
+The results produced in Table \ref{tab:exe} are as expected. The results show that the encoding methods used by msfvenom are ineffective and hiding the payload from Windows Defender, with all 46 encoding methods used, not a single one was able to evade AV. This could be for a multitude of reasons. However I believe that due of the popularity of Msfvenom, antivirus developers have had a close eye on any advancements and encoding methods that are employed, and therefore patch up systems before they can be exploited. When testing the different payloads, it was interesting to see that all iterations got picked up instantly by AV, most likely this was the signature based detection doing its job and matching the signatures of the overly used payloads and deleting them before they could be downloaded onto the system. Lastly, out of 72 different Antiviruses the lowest score received was 49 using x64/shikata_ga_nai. This is a very high score, but this was expected due to the popularity of the tool.
 
 ### MSI encoding
 
@@ -302,9 +302,9 @@ The results produced in Table @tbl:exe are as expected. The results show that th
 |            x86/unicode_upper | True     | False  | False | 42               |
 |              x86/xor_dynamic | True     | True   | False | 40               |
 |                 x86/xor_poly | True     | True   | False | 41               |
-Table: Results of encoding on MSI payload {#tbl:msi}
+Table: Results of encoding on MSI payload \label{tab:msi}
 
-The results in Table @tbl:msi show that Windows defender, yet again was unable to be evaded by msfvenom. With all 46 encryption methods being used on the MSI file type, all got deleted as soon as the file was downloaded onto the machine. Again this is most likely the word of the signature based detection. With so many people potentially using this tool, many virus iterations would have been committed to the signatures database, preventing further use of any payload created. The results also demonstrate a dramatic decrease in detection rates for Antivirus products as a whole, with a 20% average decrease in detection rates due to the extension type being an MSI instead of EXE is alarming. Like suggested in [INSERT REFERENCE HERE] work, originality is the key to success when generating a payload to defeat AV. with popular methods and extensions being highly monitored it is easier to fly under the radar with less obvious and unusual methods. The lowest score recorded was shared 37 between x86/service and x64/xor. Its also interesting to note that the RAW payload with no encoding scored lower than majority of encoders. Again this could be the result of antiviruses being over saturated with payloads generated from msfvenom and therefore have no trouble detecting the overly used payloads.
+The results in Table \ref{tab:msi} show that Windows defender, yet again was unable to be evaded by msfvenom. With all 46 encryption methods being used on the MSI file type, all got deleted as soon as the file was downloaded onto the machine. Again this is most likely the word of the signature based detection. With so many people potentially using this tool, many virus iterations would have been committed to the signatures database, preventing further use of any payload created. The results also demonstrate a dramatic decrease in detection rates for Antivirus products as a whole, with a 20% average decrease in detection rates due to the extension type being an MSI instead of EXE is alarming. Like suggested in [INSERT REFERENCE HERE] work, originality is the key to success when generating a payload to defeat AV. with popular methods and extensions being highly monitored it is easier to fly under the radar with less obvious and unusual methods. The lowest score recorded was shared 37 between x86/service and x64/xor. Its also interesting to note that the RAW payload with no encoding scored lower than majority of encoders. Again this could be the result of antiviruses being over saturated with payloads generated from msfvenom and therefore have no trouble detecting the overly used payloads.
 
 ### Templated EXE encoding
 
@@ -358,9 +358,9 @@ The results in Table @tbl:msi show that Windows defender, yet again was unable t
 |            x86/unicode_upper | True     | False  | False | 54               |
 |              x86/xor_dynamic | True     | True   | False | 56               |
 |                 x86/xor_poly | True     | True   | False | 56               |
-Table: Results of encoding on Templated EXE payload {#tbl:tempexe}
+Table: Results of encoding on Templated EXE payload \label{tab:tempexe}
 
-The results in Table @tbl:tempexe are very similar to that of Table @tbl:tempexe. It seems that even when hiding the payload within another program antivirus still has no problem detecting the malicious code. Again once the payloads were loaded onto the victim machine, they were instantly picked up by AV and deleted, therefore windows defender effectively stopped all payloads. Although the exe used (regedit) is probably quite a popular choice when using a program as a template, it is interesting to see how efficiently antivirus picks up on the malicious code within a program and deletes it. Clearly if a payload is to be successful there needs to be something different that sets it out from the rest of detected iterations. 
+The results in Table \ref{tab:tempexe} are very similar to that of Table \ref{tab:exe}. It seems that even when hiding the payload within another program antivirus still has no problem detecting the malicious code. Again once the payloads were loaded onto the victim machine, they were instantly picked up by AV and deleted, therefore windows defender effectively stopped all payloads. Although the exe used (regedit) is probably quite a popular choice when using a program as a template, it is interesting to see how efficiently antivirus picks up on the malicious code within a program and deletes it. Clearly if a payload is to be successful there needs to be something different that sets it out from the rest of detected iterations. 
 
 <!-- Could deffo yap further about this if needed -->
 
@@ -405,12 +405,12 @@ On the whole, msfvenom failed to create a single payload that evaded Windows Def
 |      interaction_system_pause | True     | True   | False | 14               |
 |           is_debugger_present | True     | True   | False | 24               |
 |                 sleep_by_ping | True     | True   | False | 14               |
-Table: Results of sandbox evasion with AVET {#tbl:avet}
+Table: Results of sandbox evasion with AVET \label{tab:avet}
 
 ### Overview of AVET results
 
 The payload used for the results above was "avetenc_mtrprtrxor_revhttps_win64.exe".
-The results shown in Table @tbl:tempexe are very surprising. On the whole AVET did very well at hiding the file on the computer. With about 1/3 of the payloads remaining on the machine after Antivirus was turned on, because of the sandboxing protections that come with Avet this allowed the payloads to go undetectable until they were run. However this is where all but one of the payloads failed, with real-time protection doing a great job it was able to remove the payloads before they were able to connect back to the attacker machine. The one payload that was able to connect back to the attacker machine was using the 'has_public_desktop' evasion technique. This was a positive result but behavioural detection caught onto the payload when using malicious functions on the meterpreter shell like screenshare. I believe that this may be due to the nature of the payload that I was using as to why I got this behavioural detection, like mentioned in (LITERATURE REVIEW [DONT KNOW WHAT TO CALL THIS]) Behavioural detection will assess each processes actions and decide whether it is malicious or not. Different strains of malware can all be classified under a single behavioural signature as they may utilise the same type of behaviour [@bazrafshan2013survey]. As meterpreter shells are very well known it is very possible that the functions signature was picked up on and then shut down. 
+The results shown in Table \ref{tab:avet} are very surprising. On the whole AVET did very well at hiding the file on the computer. With about 1/3 of the payloads remaining on the machine after Antivirus was turned on, because of the sandboxing protections that come with Avet this allowed the payloads to go undetectable until they were run. However this is where all but one of the payloads failed, with real-time protection doing a great job it was able to remove the payloads before they were able to connect back to the attacker machine. The one payload that was able to connect back to the attacker machine was using the 'has_public_desktop' evasion technique. This was a positive result but behavioural detection caught onto the payload when using malicious functions on the meterpreter shell like screenshare. I believe that this may be due to the nature of the payload that I was using as to why I got this behavioural detection, like mentioned in (LITERATURE REVIEW [DONT KNOW WHAT TO CALL THIS]) Behavioural detection will assess each processes actions and decide whether it is malicious or not. Different strains of malware can all be classified under a single behavioural signature as they may utilise the same type of behaviour [@bazrafshan2013survey]. As meterpreter shells are very well known it is very possible that the functions signature was picked up on and then shut down. 
 The results were further reflected in the TotalAV score, with the lowest scoring payload only being detected by 11 Antivirus products, for reference this is 26 less than the best payload score in msfvenom. The low detection rates highlight the importance of originality in payload generation. With less people aware of AVET, less payloads have been used by and detected by antivirus products, forcing them to use dynamic analysis techniques such as behavioural detection and heuristics to detect the payloads.
 
 ## Scarecrow results
@@ -424,7 +424,7 @@ The results were further reflected in the TotalAV score, with the lowest scoring
 |      Excel.exe |      AES | True     | True   | False | 36               |
 |    Onenote.exe |      AES | True     | True   | False | 34               |
 | Powerpoint.exe |      AES | True     | True   | False | 35               |
-Table: Results of Scarecrow AES evasion {#tbl:scar1}
+Table: Results of Scarecrow AES evasion \label{tab:scar1}
 
 |           File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
 | -------------: | -------: | -------- | ------ | ----- | ---------------- |
@@ -435,9 +435,9 @@ Table: Results of Scarecrow AES evasion {#tbl:scar1}
 |      Excel.exe |    ELZMA | True     | True   | False | 34               |
 |    Onenote.exe |    ELZMA | True     | True   | False | 34               |
 | Powerpoint.exe |    ELZMA | True     | True   | False | 33               |
-Table: Results of Scarecrow ELZMA evasion {#tbl:scar2}
+Table: Results of Scarecrow ELZMA evasion \label{tab:scar2}
 
-The results in Table @tbl:scar1 and @tbl:scar2 are very similar. With both using being signed by www.microsoft.com and generating very common Microsoft files. Although the payloads looked like genuine Microsoft files at first glance, they didnt make it past signature detection, being deleted almost instantly from the machine. With high VirusTotal scores both encoding techniques alone didnt provide sufficient evasion to get past AV. 
+The results in Table \ref{tab:scar1} and Table \ref{tab:scar2} very similar. With both using being signed by www.microsoft.com and generating very common Microsoft files. Although the payloads looked like genuine Microsoft files at first glance, they didnt make it past signature detection, being deleted almost instantly from the machine. With high VirusTotal scores both encoding techniques alone didnt provide sufficient evasion to get past AV. 
 
 |            File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
 | --------------: | -------: | -------- | ------ | ----- | ---------------- |
@@ -447,9 +447,9 @@ The results in Table @tbl:scar1 and @tbl:scar2 are very similar. With both using
 | Netfirewall.cpl |      AES | True     | True   | True  | 16               |
 |      Tablet.cpl |      AES | True     | True   | True  | 16               |
 |      Winsec.cpl |      AES | True     | True   | True  | 18               |
-Table: Results of Scarecrow evasion Disk {#tbl:scardisk}
+Table: Results of Scarecrow evasion Disk \label{tab:scardisk}
 
-The results in Table @tbl:scardisk demonstrate the clear defeat in Windows defender, with all 6 payloads successfully defeating windows defender and connecting back to the attacker machine. From there full control was granted and any commands could be sent to the victim machine. With the VirusTotal scores also being very low it is clear to see that this type of evasion is not very well documented and protected against. The payloads above were creating by using the flags `-encryptionmode AES -domain www.apple.com -obfu -Loader control -Evasion Disk` The main two flags to take note of are the Loader and Evasion methods employed. As mentioned above in Msfvenoms results, Windows defender performs significantly worse when defending against payloads in unfamiliar formats. This change in the payload type could be what tricked the AV into trusting the un-legitimate CPL file. Each payload above was tested 3 times to ensure the reliability of the results generated, all produced the same results each time.
+The results in Table \ref{tab:scardisk} demonstrate the clear defeat in Windows defender, with all 6 payloads successfully defeating windows defender and connecting back to the attacker machine. From there full control was granted and any commands could be sent to the victim machine. With the VirusTotal scores also being very low it is clear to see that this type of evasion is not very well documented and protected against. The payloads above were creating by using the flags `-encryptionmode AES -domain www.apple.com -obfu -Loader control -Evasion Disk` The main two flags to take note of are the Loader and Evasion methods employed. As mentioned above in Msfvenoms results, Windows defender performs significantly worse when defending against payloads in unfamiliar formats. This change in the payload type could be what tricked the AV into trusting the un-legitimate CPL file. Each payload above was tested 3 times to ensure the reliability of the results generated, all produced the same results each time.
 
 |          File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
 | ------------: | -------: | -------- | ------ | ----- | ---------------- |
@@ -459,9 +459,9 @@ The results in Table @tbl:scardisk demonstrate the clear defeat in Windows defen
 |       Ncp.cpl |      AES | True     | True   | True  | 15               |
 | Telephone.cpl |      AES | True     | True   | True  | 17               |
 |    Winsec.cpl |      AES | True     | True   | True  | 17               |
-Table: Results of Scarecrow evasion Known DLL {#tbl:scarDLL}
+Table: Results of Scarecrow evasion Known DLL \label{tab:scarDLL}
 
-Further testing was done with scarecrow to look for any successful patterns in payload generation. Table @tbl:scarDLL shows another successful evasion from all 6 payloads. Using similar flags to the previous iterations of payloads the only change being `-Evasion Known DLL`. It seems that the flags used with small changes have the ability to create many working payloads. The results generated above were created using a very specific evasion and obfuscation techniques so we can be positive that there are more "winning" payloads to be found. 
+Further testing was done with scarecrow to look for any successful patterns in payload generation. Table \ref{tab:scarDLL} shows another successful evasion from all 6 payloads. Using similar flags to the previous iterations of payloads the only change being `-Evasion Known DLL`. It seems that the flags used with small changes have the ability to create many working payloads. The results generated above were created using a very specific evasion and obfuscation techniques so we can be positive that there are more "winning" payloads to be found. 
 
 ### Overview of Scarecrow results
 
@@ -469,4 +469,4 @@ Overall Scarecrow was very successful at generating working payloads to evade Wi
 
 ## Custom Payload 
 
-For the second part of the experiment, a payload was handcrafted
+For the second part of the experiment, a payload was handcrafted ... need a small change here 
