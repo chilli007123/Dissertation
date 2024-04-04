@@ -138,6 +138,7 @@ I will adopting an experimental methodology to answer, to what extent can Window
 - 3) Is it feasible to handcraft payloads, as opposed to generation through tools.
 
 ## Environment
+
 In order to test the hypothesis, firstly an environment will need to be setup. The experimentation will be carried out within a labatory and using virtual machines hosted on (VMware Workstation 16) with the target running Windows 10 to the latest patch, and the attacker running Kali Linux. The two machines will be connected through the same private NAT network device. Reasoning for this is to enable the two machines to freely communicate with one another using local IP addresses, ensuring that no other devices accidentally get infected with any generated payloads and that there are no external variables unaccounted for. 
 
 ![[NetworkConfig.png]]
@@ -339,6 +340,7 @@ The results in Table 3 are very similar to that of Table 1. It seems that even w
 <!-- Could deffo yap further about this if needed -->
 
 ### Overview of Msfvenom results
+
 On the whole, msfvenom failed to create a single payload that evaded Windows Defender. Msfvenom is a very popular tool and therefore it could be expected that Antivirus developers like Microsoft would keep a close eye on it. Msfvenom is probably one of the most customisable payload generation tools available, and therefore it is a backbone for the community. However although there are many options, its not foreseeable that msfvenom can generate a payload to evade Windows Defender by itself. Therefore if a payload is to work, it would need to have some other form of evasion technique employed that is not commonly found in a well known tool such as msfvenom.
 
 ## Avet results
@@ -379,7 +381,9 @@ On the whole, msfvenom failed to create a single payload that evaded Windows Def
 |                 sleep_by_ping | True     | True   | False | 14               |
 
 The payload used for the results above was "avetenc_mtrprtrxor_revhttps_win64.exe".
+
 ### Overview of AVET results
+
 The results shown in Table 4 are very surprising. On the whole AVET did very well at hiding the file on the computer. With about 1/3 of the payloads remaining on the machine after Antivirus was turned on, because of the sandboxing protections that come with Avet this allowed the payloads to go undetectable until they were run. However this is where all but one of the payloads failed, with real-time protection doing a great job it was able to remove the payloads before they were able to connect back to the attacker machine. The one payload that was able to connect back to the attacker machine was using the 'has_public_desktop' evasion technique. This was a positive result but behavioural detection caught onto the payload when using malicious functions on the meterpreter shell like screenshare. I believe that this may be due to the nature of the payload that I was using as to why I got this behavioural detection, like mentioned in (LITERATURE REVIEW [DONT KNOW WHAT TO CALL THIS]) Behavioural detection will assess each processes actions and decide whether it is malicious or not. Different strains of malware can all be classified under a single behavioural signature as they may utilise the same type of behaviour [@bazrafshan2013survey]. As meterpreter shells are very well known it is very possible that the functions signature was picked up on and then shut down. 
 The results were further reflected in the TotalAV score, with the lowest scoring payload only being detected by 11 Antivirus products, for reference this is 26 less than the best payload score in msfvenom. The low detection rates highlight the importance of originality in payload generation. With less people aware of AVET, less payloads have been used by and detected by antivirus products, forcing them to use dynamic analysis techniques such as behavioural detection and heuristics to detect the payloads.
 
