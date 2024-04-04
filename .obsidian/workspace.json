@@ -11,9 +11,11 @@
             "id": "54cb239dec9b7ff4",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Disso_Render.pdf"
+                "file": "Dissertation_MD_FILE.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Disso_Render.pdf",
+                "file": "Dissertation_MD_FILE.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Disso_Render.pdf",
+                "file": "Dissertation_MD_FILE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Disso_Render.pdf"
+                "file": "Dissertation_MD_FILE.md"
               }
             }
           }
@@ -146,8 +148,8 @@
   },
   "active": "54cb239dec9b7ff4",
   "lastOpenFiles": [
-    "Dissertation_MD_FILE.md",
     "Disso_Render.pdf",
+    "Dissertation_MD_FILE.md",
     "Disso_Render.md",
     "Dissertation.pdf",
     "WebserverUpload 1.png",
