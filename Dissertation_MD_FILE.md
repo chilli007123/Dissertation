@@ -246,7 +246,7 @@ After experimenting with off-the-shelf tools, a handcrafted tool will be made an
 |            x86/unicode_upper | True     | False  | False | 55               |
 |              x86/xor_dynamic | True     | False  | False | 56               |
 |                 x86/xor_poly | True     | True   | False | 57               |
-Table: Results of encoding on EXE payload {@tbl:exe}
+Table: Results of encoding on EXE payload {#tbl:exe}
 
 The results produced in Table @tbl:exe are as expected. The results show that the encoding methods used by msfvenom are ineffective and hiding the payload from Windows Defender, with all 46 encoding methods used, not a single one was able to evade AV. This could be for a multitude of reasons. However I believe that due of the popularity of Msfvenom, antivirus developers have had a close eye on any advancements and encoding methods that are employed, and therefore patch up systems before they can be exploited. When testing the different payloads, it was interesting to see that all iterations got picked up instantly by AV, most likely this was the signature based detection doing its job and matching the signatures of the overly used payloads and deleting them before they could be downloaded onto the system. Lastly, out of 72 different Antiviruses the lowest score received was 49 using x64/shikata_ga_nai. This is a very high score, but this was expected due to the popularity of the tool.
 
@@ -302,7 +302,7 @@ The results produced in Table @tbl:exe are as expected. The results show that th
 |            x86/unicode_upper | True     | False  | False | 42               |
 |              x86/xor_dynamic | True     | True   | False | 40               |
 |                 x86/xor_poly | True     | True   | False | 41               |
-Table: Results of encoding on MSI payload {@tbl:msi}
+Table: Results of encoding on MSI payload {#tbl:msi}
 
 The results in Table @tbl:msi show that Windows defender, yet again was unable to be evaded by msfvenom. With all 46 encryption methods being used on the MSI file type, all got deleted as soon as the file was downloaded onto the machine. Again this is most likely the word of the signature based detection. With so many people potentially using this tool, many virus iterations would have been committed to the signatures database, preventing further use of any payload created. The results also demonstrate a dramatic decrease in detection rates for Antivirus products as a whole, with a 20% average decrease in detection rates due to the extension type being an MSI instead of EXE is alarming. Like suggested in [INSERT REFERENCE HERE] work, originality is the key to success when generating a payload to defeat AV. with popular methods and extensions being highly monitored it is easier to fly under the radar with less obvious and unusual methods. The lowest score recorded was shared 37 between x86/service and x64/xor. Its also interesting to note that the RAW payload with no encoding scored lower than majority of encoders. Again this could be the result of antiviruses being over saturated with payloads generated from msfvenom and therefore have no trouble detecting the overly used payloads.
 
@@ -358,7 +358,7 @@ The results in Table @tbl:msi show that Windows defender, yet again was unable t
 |            x86/unicode_upper | True     | False  | False | 54               |
 |              x86/xor_dynamic | True     | True   | False | 56               |
 |                 x86/xor_poly | True     | True   | False | 56               |
-Table: Results of encoding on Templated EXE payload {@tbl:tempexe}
+Table: Results of encoding on Templated EXE payload {#tbl:tempexe}
 
 The results in Table @tbl:tempexe are very similar to that of Table @tbl:tempexe. It seems that even when hiding the payload within another program antivirus still has no problem detecting the malicious code. Again once the payloads were loaded onto the victim machine, they were instantly picked up by AV and deleted, therefore windows defender effectively stopped all payloads. Although the exe used (regedit) is probably quite a popular choice when using a program as a template, it is interesting to see how efficiently antivirus picks up on the malicious code within a program and deletes it. Clearly if a payload is to be successful there needs to be something different that sets it out from the rest of detected iterations. 
 
@@ -405,7 +405,7 @@ On the whole, msfvenom failed to create a single payload that evaded Windows Def
 |      interaction_system_pause | True     | True   | False | 14               |
 |           is_debugger_present | True     | True   | False | 24               |
 |                 sleep_by_ping | True     | True   | False | 14               |
-Table: Results of sandbox evasion with AVET {@tbl:avet}
+Table: Results of sandbox evasion with AVET {#tbl:avet}
 
 ### Overview of AVET results
 
@@ -424,7 +424,7 @@ The results were further reflected in the TotalAV score, with the lowest scoring
 |      Excel.exe |      AES | True     | True   | False | 36               |
 |    Onenote.exe |      AES | True     | True   | False | 34               |
 | Powerpoint.exe |      AES | True     | True   | False | 35               |
-Table: Results of Scarecrow AES evasion {@tbl:scar1}
+Table: Results of Scarecrow AES evasion {#tbl:scar1}
 
 |           File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
 | -------------: | -------: | -------- | ------ | ----- | ---------------- |
@@ -435,7 +435,7 @@ Table: Results of Scarecrow AES evasion {@tbl:scar1}
 |      Excel.exe |    ELZMA | True     | True   | False | 34               |
 |    Onenote.exe |    ELZMA | True     | True   | False | 34               |
 | Powerpoint.exe |    ELZMA | True     | True   | False | 33               |
-Table: Results of Scarecrow ELZMA evasion [@tbl:scar2]
+Table: Results of Scarecrow ELZMA evasion {#tbl:scar2}
 
 The results in Table @tbl:scar1 and @tbl:scar2 are very similar. With both using being signed by www.microsoft.com and generating very common Microsoft files. Although the payloads looked like genuine Microsoft files at first glance, they didnt make it past signature detection, being deleted almost instantly from the machine. With high VirusTotal scores both encoding techniques alone didnt provide sufficient evasion to get past AV. 
 
