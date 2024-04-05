@@ -485,6 +485,8 @@ The results of table \ref{tab:custom} are as expected, with the custom payload e
 
 Overall, it was very hard to create working payloads with our tools. With producing over 140+ payloads for msfvenom and not a single payload was able to evade Windows Defender. Contradictory to [INSERT REFERENCE HERE] AVET proved ineffective at side-stepping Windows Defender and also failed to generate working payloads; with one temporary exception. AVET had low scores on VirusTotal due to its sandbox evasion techniques but with the ongoing battles between AV and virus developers the results from [INSERT THE SAME REF] could not be reproduced with this tool. Lastly, the tool Scarecrow was very effective at defeating Windows Defender with roughly half the tested payloads working. The reason for the success of Scarecrow is likely due to new evasion techniques employed, that tools like Msfvenom and Avet dont have access to. The ability to self sign payloads and obfuscate malicious codes by cloning DLL properties is what made Scarecrow so effective in producing working payloads. The impact of the results above could be detrimental to the security of Windows systems, allowing attackers the ability to quickly deploy and manage RAT viruses on a victims machines. Once the RAT virus runs on the machine other functions and clones will be created, lessening the security of those who use the machine. To prevent this from happening protection mechanisms will need to be put in place to search for fake signing and DLL cloning. 
 
+## Effectiveness of custom payloads
+
 
 # Conclusion
 
@@ -494,3 +496,7 @@ Lastly, the results discussed lead us to believe that it is feasible to handcraf
 
 <!-- Futher research, find out the key factors needed fro scarecrow to be successful -->
  
+# Project management
+
+# Python code
+
