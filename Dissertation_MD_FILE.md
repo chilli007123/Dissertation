@@ -482,5 +482,8 @@ The results of table \ref{tab:custom} are as expected, with the custom payload e
 
 ## Effectiveness of tool generated payloads
 
-Overall, it was very hard to create working payloads with our tools. With producing over 140+ payloads for msfvenom and not a single payload was able to evade Windows Defender. Contradictory to [INSERT REFERENCE HERE] AVET proved ineffective at side-stepping Windows Defender and also failed to generate working payloads; with one temporary exception. Although 
+Overall, it was very hard to create working payloads with our tools. With producing over 140+ payloads for msfvenom and not a single payload was able to evade Windows Defender. Contradictory to [INSERT REFERENCE HERE] AVET proved ineffective at side-stepping Windows Defender and also failed to generate working payloads; with one temporary exception. AVET had low scores on VirusTotal due to its sandbox evasion techniques but with the ongoing battles between AV and virus developers the results from [INSERT THE SAME REF] could not be reproduced with this tool. Lastly, the tool Scarecrow was very effective at defeating Windows Defender with roughly half the tested payloads working. The reason for the success of Scarecrow is likely due to new evasion techniques employed, that tools like Msfvenom and Avet dont have access to. The ability to self sign payloads and obfuscate malicious codes by cloning DLL properties is what made Scarecrow so frightening. 
+
+
+<!-- Futher research, find out the key factors needed fro scarecrow to be successful -->
  
