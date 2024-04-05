@@ -476,4 +476,10 @@ For the second part of the experiment, a payload was handcrafted using python an
 | client.exe |     None | True     | True   | True  | 4                |
 \label{tab:custom}
 
-The results of table \ref{tab:custom} are as expected, with the custom payload evading Wwindows Defender. The scores on VirusTotal are shocking with only four Antivirus products detecting malware, the results produced above clearly indicate that [@kalogranis2018antivirus] was right in the fact that handcrafted payloads will perform better than tool generated payloads. Furthermore with the payload having no encoding and still producing the lowest score yet it further demonstrates the effectiveness of a hand crafted payload.  
+The results of table \ref{tab:custom} are as expected, with the custom payload evading Windows Defender. The scores on VirusTotal are shocking with only four Antivirus products detecting malware, the results produced above clearly indicate that [@kalogranis2018antivirus] was right in the fact that handcrafted payloads will perform better than tool generated payloads. Furthermore with the payload having no encoding and still producing the lowest score yet it further demonstrates the effectiveness of a hand crafted payload. 
+
+# Discussion
+
+The results above show a clear gap between custom and tool generated payloads. With tools like Msfvenom producting VirusTotal scores of >50 
+
+
