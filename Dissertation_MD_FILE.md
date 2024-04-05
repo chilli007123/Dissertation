@@ -470,3 +470,10 @@ Overall Scarecrow was very successful at generating working payloads to evade Wi
 ## Custom Payload 
 
 For the second part of the experiment, a payload was handcrafted using python and sockets to create a RAT. 
+
+|       File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
+| ---------: | -------: | -------- | ------ | ----- | ---------------- |
+| client.exe |     None | True     | True   | True  | 4                |
+\label{tab:custom}
+
+The res
