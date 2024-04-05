@@ -480,6 +480,7 @@ The results of table \ref{tab:custom} are as expected, with the custom payload e
 
 # Discussion
 
-The results above show a clear gap between custom and tool generated payloads. With tools like Msfvenom producting VirusTotal scores of >50 
+## Effectiveness of tool generated payloads
 
-
+Overall, it was very hard to create working payloads with our tools. With producing over 140+ payloads for msfvenom and not a single payload was able to evade Windows Defender. Contradictory to [INSERT REFERENCE HERE] AVET proved ineffective at side-stepping Windows Defender and also failed to generate working payloads; with one temporary exception. Although
+ 
