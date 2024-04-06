@@ -51,9 +51,9 @@ This virus certainly wasn't the first to abuse this exploit, but it was a pivota
 
 ### Zeus Virus
 
-https://www.cynet.com/malware/zeus-malware-variants-methods-and-history/  <!-- might have to find a different reference to this as its tryna sell av solution -->
+ <!-- might have to find a different reference to this as its tryna sell av solution -->
 
-Zeus/Zbot was a malware package that used a client/server model (Trojan). The main function of Zeus was to gain unauthorised access to financial systems by stealing credentials, banking information and financial data. This virus over the years infected over 3 million computers in the US, including companies such as NASA and the Bank of America. Zeus disguised it self as legitimate software and enables the malware when it spots the use of a banking site or financial transaction. 
+[@Cynet_2024] Informs about how Zeus/Zbot was a malware package that used a client/server model (Trojan). The main function of Zeus was to gain unauthorised access to financial systems by stealing credentials, banking information and financial data. This virus over the years infected over 3 million computers in the US, including companies such as NASA and the Bank of America. Zeus disguised it self as legitimate software and enables the malware when it spots the use of a banking site or financial transaction. 
 Zeus was so successful in infecting machines, using two common ways of injection. Firstly, Drive-by-downloads. This involved compromising legitimate websites and exploiting known browser and operating system vulnerabilities to download the Zeus malware when a user accessed the site.
 Secondly, As Zeus grew it gained the ability to infiltrate user accounts on social media and over email. With the compromised accounts Zeus would be able to create phishing messages tricking users into downloading this malware.
 
