@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dissertation_MD_FILE.md",
+                "file": "Proposal.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dissertation_MD_FILE.md",
+                "file": "Proposal.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dissertation_MD_FILE.md",
+                "file": "Proposal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dissertation_MD_FILE.md"
+                "file": "Proposal.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "54cb239dec9b7ff4",
   "lastOpenFiles": [
-    "Disso_Render.md",
     "Dissertation_MD_FILE.md",
+    "Disso_Render.md",
     "Disso_Render.pdf",
     "Dissertation.pdf",
     "WebserverUpload 1.png",
