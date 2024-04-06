@@ -498,6 +498,7 @@ Lastly, the results discussed lead us to believe that it is feasible to handcraf
 # Project management
 
 # Python code
+Below is the python code that was compiled to create a working custom payload. The code
 
 ## checkFILES.py
 ```python
