@@ -496,6 +496,9 @@ Lastly, the results discussed lead us to believe that it is feasible to handcraf
  The study above although having conclusive results does not properly project the actions an attacker may take in the real world, for example the payloads produced mainly came from one tool at a time. Better results may of been able to be achieved if tools were used in conjunction with one another. Stacking sandbox evasion techniques with LoL techniques may allow a better chance of evasion than generating payloads one tool at a time. For future work more research would need to be done into why LoL is so effective at evading Windows Defender, and what downfalls prevent it from performing like other successful tools.
 # Project management
 
+<!-- Gant chart 
+will need to talk about supervision process
+--> 
 # Python code
 Below is the python code that was compiled to create a working custom payload. The code below was adapted from a previous piece of work to create the RAT virus. The two files required to compile for the victim is client.py and clientENUM.py, all other files are for server/attacker side purposes. 
 
