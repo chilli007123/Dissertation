@@ -1,9 +1,9 @@
 --- 
-title: Chilli Awesome Dissertation
+title: To what extent can Windows Defender detect malicious code where evasion techniques are used?
 author: Charles Graham
 sid: 11111546
 supervisor: Dan Goldsmith
-#date: 12/12/2024
+date: 12/12/2024
 ethics_number: xxxxxx
 
 toc: true
@@ -26,26 +26,16 @@ citation-style: template/apa
 
 
 abstract: |
-    This is the abtract
-    
-    If you kep it in the indented block shizzle will work
-    I hope that new lines also work correctly.
-    
-    A new paragaph.
-    
-    Not sure avout it being centered, I will have a think bout that,
-    possibly move so its got bit more space at the top than the usual stuff.
+    This paper aims to evalulate the effectiveness of Windows defenders protection mechanisms where evasion techniques are used. We discusses the current protection mechanisms in place to detect malicious files, and also the evasion techniques used to bypass such protections.
+    Through the usage of off-the-shelf tools and custom payloads, the experiment was successful in evading AV. Tools such as AVET and Msfvenom had little success but Scarecrow was able to defeat Defender through the use of self signing and Living of The Land techniques. The results highlighted gaps between public tools and 0-Day handcrafted payloads, confirming the severity that custom payloads could impose in the ongoing battle between Virus and Anti-virus developers. With over 560,000 new detections of malware each day, the need to understand the current level to which we are exposed to malicious viruses is crucial. 
     
 dedication: |
-    We also like to add a dedicaaion
-    Like the abstract anything in the block wll be kept
+    I would like to dedicate this Dissertation to:
     
-    Would lke to thank my parents, god, the family cat / dog.
-    Obviously Dan because he is awesome.
-
-    And Kai becuase he is aswsome too
+    My family and friends for loving and supporting throughout Uni.
     
-    Again,  not sure about the layout, but we can fix that.
+    My Supervisor/mentor, for their invaluable time and knowledge, inspiring me to do great work.
+    
     
 
 ---
