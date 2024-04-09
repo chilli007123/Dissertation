@@ -2,7 +2,7 @@
 
 # Appendix 1: Python code 
 
-Below is the python code that was compiled to create a working custom payload. The code below was adapted from a previous piece of work to create the RAT virus. The two files required to compile for the victim is client.py and clientENUM.py, all other files are for server/attacker side purposes. 
+Below is the python code that was compiled to create a working custom payload. The code below was adapted from a previous piece of work  by [@Graham_2022] to create the RAT virus. The two files required to compile for the victim is client.py and clientENUM.py, all other files are for server/attacker side purposes. 
 
 ## checkFILES.py
 ```python

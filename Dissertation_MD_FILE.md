@@ -155,14 +155,12 @@ The results section will be represented with quantitative data within tables so 
 ## Environment
 
 In order to test the hypothesis, firstly an environment will need to be setup. The experimentation will be carried out within a lab and using virtual machines hosted on (VMware Workstation 16) with the target running Windows 10 to the latest patch, and the attacker running Kali Linux. The two machines will be connected through the same private NAT network device. Reasoning for this is to enable the two machines to freely communicate with one another using local IP addresses, ensuring that no other devices accidentally get infected with any generated payloads and that there are no external variables unaccounted for. 
+ 
+![Network configuration (Attacker/Victim)](NetworkConfig.png) 
 
-![Network configuration (Attacker/Victim)](NetworkConfig.png)
+Kali Linux comes with a wide range of pre-installed pen-testing applications and tools, due to the freedom that kali Linux enables, this will also allow creation of malicious payloads without the risk of the operating system deleting any crucial work. As discussed above, the purpose of this research is focussing on the effectiveness of windows defender to when a malicious file is already present on the machine. Furthermore, the target will be infected by through the aid of pythons http server command.  `python -m http.server`. Through the usage of this command I will be able to setup a temporary local webserver from the attackers current directory, that enables the target machine to download any payloads that are created. This will be further highlighted in the figure below
 
-
-
-Kali Linux comes with a wide range of pre-installed pen-testing applications and tools, due to the freedom that kali Linux enables, this will also allow creation of malicious payloads without the risk of the operating system deleting any crucial work. As discussed above, the purpose of this research is focussing on the effectiveness of windows defender to when a malicious file is already present on the machine. Furthermore, the target will be infected by through the aid of pythons http server command.  `python -m http.server`. Through the usage of this command I will be able to setup a temporary local webserver from the attackers current directory, that enables the target machine to download any payloads that are created. This will be further highlighted in the figure below 
-
-![Web server configuration](WebserverUpload1.png)
+![Web server configuration](WebserverUpload1.png) 
 
 
 
@@ -518,6 +516,10 @@ To answer the research question, overall I agree that Windows Defender can detec
 # Project management
 
 ## Gannt Chart
+
+Over the course of the project, I have updated the Gannt chart to clearly reflect any changes in progroess. Overall the timelines were fairly similar, but the Literature review and the experimentation took longer than expected due to having to find up to date literature and automating mundane tasks such as generating 100's of payloads.
+
+![Updated Gannt Chart](ganntupdated.png)
 
 ## Supervision process
 
