@@ -16,23 +16,17 @@ Antivirus software is arguably one of the most critical processes on our compute
 
 <!-- Talk about what the project is and what the project is not -->
 
+The project in question will focus on the detection of a virus and will not devle into how the virus got onto the machine. Doing so will enable the experiment to accurately measure results concerning detection rates.
+
 ## Aims and objectives:
 
-  - How well do off-the-shelf tools evade antivirus?
-  - What are the key characteristics of a virus?
-  - What behaviours cause Antivirus to flag a file as malicious?
-  - What techniques, if any, can be used to evade Antivirus?
+  - 1) How well do off-the-shelf tools evade antivirus?
+  - 2) What evasion techniques, if any can successfully evade antivirus?
+  - 3) Is it feasible to handcraft payloads, as opposed to generation through tools.
 
 <!-- Need to talk more about aims and objectives -->
+Lastly the primary research question is: To what extent can Windows Defender detect malicious code where evasion techniques are used?
 
-## Legal and Ethical considerations:
-### Legal
-
-Throughout this project I will be researching and developing computer viruses, and therefore bare any responsibility over the programs I create and how they are used. Because legal considerations around Computer Misuse Act (1990) and Civil Liability Laws, all versions of computer virus that are created will be tested locally. This means that we wont address how viruses spread over the internet, but we will dive into how well AV detects them once on a "victims" computer. During this research no data will be lost or destroyed and no person(s) will be affected by my research. 
-
-### Ethical
-
-As my research explores the techniques and mindset that a malware developer may use there are some ethical implications. Firstly, any working code that bypasses AV will be concealed as to not encourage readers to use for malicious reasons. Secondly, I will practice responsible disclosure. In the case that my research leads to a security hole being uncovered, this will be reported to the relevant parties. Lastly, I will ensure that the intentions of my research are purely educational.
 
 # Literature review:
 
@@ -110,7 +104,7 @@ Morphic coding techniques such as polymorphism and metamorphism aim to change th
 There are tools out there, such as Veil, Avet, TheFatRat and PeCloak.py, that aim to quickly create an undetectable executable file that can infect a victim's device. Although these tools are quick and easy to use, the results generated from them are usually sub-par. This is due to AV developers being able to watch the development of the tools and patch any exploits that may have been found by the tool developers. Although as some of these tools allow you to highly customise your payload, this may open a window of opportunity in that AV may take a while to detect the malicious file. 
 
 ## Papers
-#### Paper 1
+### Paper 1
 
 The author [@kaushik2022systematic] of ‘A systematic approach for evading antiviruses using malware obfuscation’. The paper is from 2022 and describes the process they go through to obfuscate a payload with Graffiti and Veil-Evasion. This research aims to identify methods that can be used to bypass the antivirus, while mainly focussing on tools such as Veil-Evasion and Graffiti. Similarly to the proposed project, the author starts trying to evade antivirus by using readily available tools such as Graffiti and Veil-Evasion. According to the results, Graffiti failed most of the time to avoid the antivirus and was not effective. However, through the use of Veil-Evasion and a .bat to .exe converter, they were able to produce a payload that gave remote root access to a Windows machine (bypassing Windows 10 Defender). This is a significant result as it demonstrates that even off-the-shelf tools can be used to bypass Windows 10 Defender. Reviewing this paper gives an insight into the techniques I will need to follow to generate the same results and the methodology I should follow.
 
@@ -122,7 +116,7 @@ One strength of this paper is that the conclusion provides an optimal approach t
 
 In conclusion, this paper has a strong connection with my proposal. The paper has some crucial methodology that is relevant to the approach that I intend to take. The overall results demonstrate that evasion of modern-day antivirus systems is possible through the use of readily available tools. The paper is also very clear on the steps that need to be taken to reach the same results, enabling other researchers to be able to conduct the experiment themselves.
 
-#### Paper 2
+### Paper 2
 
 In contrast to the results of this work, [@aminu2020evaluating] found concluded that the best evasion tools were Avet and PeCloak.py. "Bypassed most of the selected antivirus by 83% and 67% respectively". These findings are super interesting to us as a later study by [@kaushik2022systematic] was able to bypass Windows 10 Defender with Veil. The development of the tools used could cause this change in results. [@aminu2020evaluating] aimed to evaluate the effectiveness of selected antivirus systems through the use of evasion tools such as Veil 3.0, PeCloak.py, Shellter, and a Fat Rat. These tests were conducted against a Windows platform. Although these results are older and occurred while testing different antivirus systems to [@kaushik2022systematic], the results are still relevant and need to be understood. Since Windows Defender and the tools used in this experiment have arguably advanced, this also relates to above, where the emphasis is demonstrated over the need for more research to be done over antivirus systems and their counterpart. With technology evolving at exponential rates, so are the tools and techniques that create unwanted programs and leave backdoors into our machines. 
 
@@ -132,7 +126,7 @@ One of the strengths of this paper is that the author used a virtual environment
 
 In conjunction with [@kalogranis2018antivirus], these authors also conclude that results could be more substantial if the use of hand-crafted payloads were employed. This would stop the signature-based detection system from flagging files that have come from readily available tools and slow down the speed at which the antivirus flags the file as suspicious. Although it is a farfetched idea to hand-create every virus, it also demonstrates how coding techniques such as polymorphic and metamorphic systems could be employed to create more devastating strains of computer virus. 
 
-#### Paper 3
+### Paper 3
 
 [@barr2021survivalism] discusses a sophisticated evasion technique called Living-Off-The-Land (LotL). This evasion technique is one of the major evasion techniques used in many attacks. The premise behind this attack is to leverage binaries that are already present in the system to conduct the attack. This is an interesting technique as it potentially bypasses the need for the attacker to inject a suspicious program into the system. The conclusions of this paper highlight that almost every popular AV product tested had difficulties detecting malicious usage of LotL binaries. Later development included working with AV vendors and working to implement detection methods for this style of attack.
 
@@ -151,9 +145,12 @@ Understanding this research enables me to start answering my research questions.
 # Methodology
 
 I will adopting an experimental methodology to answer, to what extent can Windows Defender detect malicious code where evasion techniques are used. To answer this question fully I have broken broken down the research questions into sub questions
-- 1) How well do off-the-shelf tools evade antivirus?
-- 2) What evasion techniques, if any can successfully evade antivirus?
-- 3) Is it feasible to handcraft payloads, as opposed to generation through tools.
+
+  - 1) How well do off-the-shelf tools evade antivirus?
+  - 2) What evasion techniques, if any can successfully evade antivirus?
+  - 3) Is it feasible to handcraft payloads, as opposed to generation through tools.
+ 
+The results section will be represented with quantitative data within tables so that it can easily be interpreted.
 
 ## Environment
 
@@ -182,6 +179,11 @@ In this section I will discuss the tools and methods that will be employed to ev
 Msfvenom is probably one of the most well known tools when it comes to generating payloads for platforms such as, Windows, Mac, and Linux machines. With many generic payloads within its database, msfvenom is easy to use and can generate payloads to very specific needs. With all previous experiments discussed above using msfvenom, it seems the best way to test the effectiveness of Windows Defender is to see how its developed over the years in combatting payloads from this off-the-shelf tool. Msfvenom will also be used in conjunction with some of the other tools discussed below, to create payloads where needed. Specifically a couple of different payload types will be generated, `.msi` and `.exe`.  The first iteration of payloads will consist of a simple reverse TCP shell payload to be encrypted with all 46 types of encryption available. After testing is done with the exe format I will repeat the steps above using msi payloads in place. Lastly, testing will be conducted further using a templated exe, for this case regedit.exe was selected due to it being in all windows systems and being a file that needs elevated privileges. 
 
 <!-- Talk more about this once you have done some experimentation -->
+
+## Veil 3.1
+
+The reason Veil has been selected is due to the contradictry results that were generated over the span of a few years in the section above. Veil-Evasion is a famouse framework written in python. The framwork can to utilised to produce payloads that can sidestep most of the Avs [@kaushik2022systematic].
+
 ### AVET
 
 Anti-Virus evasion tool (AVET) is a popular tool that is commonly used by pen-testers. Again this tool is accessible through GitHub and utilises the python language. AVET comes with many different payloads and evasion techniques, such as sandbox evasion which make it a great tool to conduct our experiment with. AVET payloads will be crafted by using msfvenom (this is built into the tool) and then using each sandbox evasion technique on the payloads. This will enable analysis on potentially working techniques and gives the Antivirus a range of evasion techniques to defend against. After generating all 32 payloads, they will be deployed onto the windows machine and tested. Any positive results will be retested and analysed as to why they worked.
@@ -196,7 +198,10 @@ After experimenting with off-the-shelf tools, a handcrafted tool will be made an
 
 # Results
 
+In this section, the results from the experiment will be discussed and visually represented to highlight any successes or failures in the experiment. One unfortunate failure to note is that Veil 3.1 was not up to the standard of the other tools, in such only one encryption method was availble for use (XOR), unforutnately this didnt work. Hence the decision was made to remove Veil 3.1 from the experiment.
+
 ## Msfvenom results
+
 ### EXE encoding
 
 |                     Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
@@ -251,7 +256,7 @@ After experimenting with off-the-shelf tools, a handcrafted tool will be made an
 |                 x86/xor_poly | True     | True   | False | 57               |
 Table: Results of encoding on EXE payload \label{tab:exe}
 
-The results produced in Table \ref{tab:exe} are as expected. The results show that the encoding methods used by msfvenom are ineffective and hiding the payload from Windows Defender, with all 46 encoding methods used, not a single one was able to evade AV. This could be for a multitude of reasons. However I believe that due of the popularity of Msfvenom, antivirus developers have had a close eye on any advancements and encoding methods that are employed, and therefore patch up systems before they can be exploited. When testing the different payloads, it was interesting to see that all iterations got picked up instantly by AV, most likely this was the signature based detection doing its job and matching the signatures of the overly used payloads and deleting them before they could be downloaded onto the system. Lastly, out of 72 different Antiviruses the lowest score received was 49 using x64/shikata_ga_nai. This is a very high score, but this was expected due to the popularity of the tool.
+The results produced in Table \ref{tab:exe} are as expected. The results show that the encoding methods used by msfvenom are ineffective and hiding the payload from Windows Defender, with all 46 encoding methods used, not a single one was able to evade AV. This could be for a multitude of reasons. However I believe that due of the popularity of Msfvenom, antivirus developers have had a close eye on any advancements and encoding methods that are employed, and therefore patch up systems before they can be exploited. When testing the different payloads, it was interesting to see that all iterations got picked up instantly by AV, most likely this was the signature based detection doing its job and matching the signatures of the overly used payloads and deleting them before they could be downloaded onto the system. Lastly, out of 72 different Antiviruses the lowest score received was 49 using x64/shikata_ga_nai. This is a very high score, but this was expected due to the popularity of the tool, and the abundance of tutuorials on the internet teaching indivuduals how to "hack" has caused the downfall on the effectiveness of this tool.
 
 ### MSI encoding
 
@@ -479,9 +484,10 @@ For the second part of the experiment, a payload was handcrafted using python an
 | client.exe |     None | True     | True   | True  | 4                |
 \label{tab:custom}
 
-The results of table \ref{tab:custom} are as expected, with the custom payload evading Windows Defender. The scores on VirusTotal are shocking with only four Antivirus products detecting malware, the results produced above clearly indicate that [@kalogranis2018antivirus] was right in the fact that handcrafted payloads will perform better than tool generated payloads. Furthermore with the payload having no encoding and still producing the lowest score yet it further demonstrates the effectiveness of a hand crafted payload. The payload had functions such as, taking pictures on the victims webcam and opening a port on the machine so that the attacker can download any files. As the payload used no evasion techniques it ponders the question to whether Windows Defender has sufficient protections against new strains of viruses.
+The results of table \ref{tab:custom} are as expected, with the custom payload evading Windows Defender. The scores on VirusTotal are shocking with only four Antivirus products detecting malware, the results produced above clearly indicate that [@kalogranis2018antivirus] was right in the fact that handcrafted payloads will perform better than tool generated payloads. Furthermore with the payload having no encoding and still producing the lowest score yet it further demonstrates the effectiveness of a hand crafted payload. The payload had functions such as, taking pictures on the victims webcam and opening a port on the machine so that the attacker can download any files. As the payload has many functions similar to those in modern day viruses it is strange that behavioural detection techniques didnt pick it up as a virus. Lastly, As the payload used no evasion techniques it ponders the question to whether Windows Defender has sufficient protections against new strains of viruses. 
 
 <!-- Im going to have to talk more about this -->
+
 # Discussion
 
 ## Effectiveness of tool generated payloads
@@ -502,12 +508,29 @@ Lastly here is a clear view on the detection rates for the different tools compa
 In conclusion, the results of this study exemplify the effectiveness of the different off-the-shelf payload generation tools and their capabilities at evading Windows Defender. While all payloads generated by Msfvenom and AVET proved to be ineffective, payloads from Scarecrow exhibited its effectiveness and consistently sidestepped Windows Defender. Moreover, 0-Day payloads or handcrafted payloads easily evaded Windows Defender and 68/72 antivirus products, shedding light on potential flaws in the protection mechanisms currently employed by AV products. 
 In regards to any research questions, I can answer that off-the-shelf tools are ineffective at evading antivirus products due to the close eye developers keep on any advancements the tools make, patching any new vulnerabilities as they arise. The only exception is when a new tool is released and uses unconventional methods to evade antivirus, such as self-signing and Living of Land (LoL) techniques to blend in with the machines environment. The techniques mentioned before can also answer the question of which evasion techniques can successfully evade antivirus. 
 Lastly, the results discussed lead us to believe that it is feasible to handcraft payloads, as opposed to generation through tools. Results show that tools can be very unreliable and may not produce consistent results. On the other hand, custom payloads will allow freedom of functionality and provide a low detection rate. The time to handcraft a payload is most likely shorter than it would take to find a sustainable tool for payload generation. Lastly, behaviours such as sending commands from meterpreter shells will instantly get reported to behavioural analysis and kill the payload. The work conducted above will be interesting to AV developers looking to strengthen their protection mechanisms or pen-testers to broaden their understanding on the effectiveness of the default AV on windows machines.
+
+To answer the research question, overall I agree that Windows Defender can detect malicious code where evasion techniques are used to about 90%. With many tools being detected instantly, the 10% where AV failed was due to new methods or custom payloads.
 <!-- Further research, find out the key factors needed for scarecrow to be successful -->
 
 # Further work
  The study above although having conclusive results does not properly project the actions an attacker may take in the real world, for example the payloads produced mainly came from one tool at a time. Better results may of been able to be achieved if tools were used in conjunction with one another. Stacking sandbox evasion techniques with LoL techniques may allow a better chance of evasion than generating payloads one tool at a time. For future work more research would need to be done into why LoL is so effective at evading Windows Defender, and what downfalls prevent it from performing like other successful tools.
 
 # Project management
+
+## Gannt Chart
+
+## Supervision process
+
+Overall the Supervision process was very informative and helpful. Each Week meetings would be setup where students under the same supervisor could go to ask questions and get feedback. Furthermore, there was also time for me to individually setup meetings where I could discuss more project specific questions with my supervisor. The supervision process encouraged me to chip away at my work each week and bring forth questions when needed.
+
+# Legal and Ethical considerations:
+## Legal
+
+Throughout this project I will be researching and developing computer viruses, and therefore bare any responsibility over the programs I create and how they are used. Because legal considerations around Computer Misuse Act (1990) and Civil Liability Laws, all versions of computer virus that are created will be tested locally. This means that we wont address how viruses spread over the internet, but we will dive into how well AV detects them once on a "victims" computer. During this research no data will be lost or destroyed and no person(s) will be affected by my research. 
+
+## Ethical
+
+As my research explores the techniques and mindset that a malware developer may use there are some ethical implications. Firstly, any working code that bypasses AV will be concealed as to not encourage readers to use for malicious reasons. Secondly, I will practice responsible disclosure. In the case that my research leads to a security hole being uncovered, this will be reported to the relevant parties. Lastly, I will ensure that the intentions of my research are purely educational.
 
 <!-- Gant chart 
 will need to talk about supervision process
