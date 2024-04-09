@@ -6,6 +6,7 @@ PANDOC=pandoc
 TEMPLATE=remote_vogel
 PANDOC_ARGS= --listings --citeproc --top-level-division=chapter --number-sections --data-dir=./template
 FILTERS=./template/include-files.lua
+
 %.pdf: %.md Dissertation_MD_FILE.md
 # Standard Pandoc
 	$(PANDOC) $< -o $@ --from markdown --template $(TEMPLATE) --lua-filter $(FILTERS) $(PANDOC_ARGS)
