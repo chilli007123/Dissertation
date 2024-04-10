@@ -1017,6 +1017,60 @@ $endif$
 %% end titlepage
 %%
 
+%%% -- Start Declaration %%%
+\thispagestyle{empty}
+    \noindent \textbf{6047CEM Declaration of Originality} \\
+    I declare that this project is all my own work and has not been copied in part or in whole from any other source
+    except where duly acknowledged.
+    As such, all use of previously published work (from books, journals, magazines,
+    internet etc) has been acknowledged by citation within the main report to an item in the References or
+    Bibliography lists.
+    I also agree that an electronic copy of this project may be stored and used for purposes of
+    plagiarism prevention and detection.
+
+    \vspace{0.5cm}
+
+    \noindent \textbf{Statement of Copyright} \\
+    I acknowledge that the copyright of this project report, and any product developed as part of the project, belong
+    to Coventry University.
+    Support, including funding, is available to commercialise products and services developed by staff and students.
+    Any revenue that is generated is split with the inventor(s) of the product or service.
+    For further information, please see www.coventry.ac.uk/ipr or contact ipr@coventry.ac.uk.
+
+    \vspace{0.5cm}
+
+    \noindent \textbf{Statement of Ethical Engagement} \\
+    I declare that a proposal for this project has been submitted to the Coventry University ethics monitoring
+    website (https://ethics.coventry.ac.uk) and that the application number is listed below. \\ \\
+    \textbf{Note:} Projects without an ethics application number will be rejected for marking.
+
+    \vspace{1cm}
+
+    \begin{table}[ht]
+        \newlength\q
+        \setlength\q{\dimexpr .5\textwidth -2\tabcolsep}
+        \begin{tabular}{p{\q}p{\q}}
+            \textbf{Signed:} & \textbf{Date:} $date$
+        \end{tabular}
+        \label{tab:signed_declaration}
+    \end{table}
+
+    \begin{table}[ht]
+        \newlength\qa
+        \setlength\qa{\dimexpr .5\textwidth -2\tabcolsep}
+        \renewcommand{\arraystretch}{1.5}
+        \begin{tabular}{|p{\qa}|p{\qa}|}
+            \hline
+            \cellcolor{black} \textcolor{white}{\textbf{Name}} & $author$ \\ \hline
+            \cellcolor{black} \textcolor{white}{\textbf{Student ID}} & $sid$ \\ \hline
+            \cellcolor{black} \textcolor{white}{\textbf{Ethics Application Number}} & $ethics_number$ \\ \hline
+            \cellcolor{black} \textcolor{white}{\textbf{First Supervisors Name}} & $supervisor$ \\ \hline
+        \end{tabular}
+        \label{tab:ethics_details}
+    \end{table}
+    \clearpage
+%%% End Declariation
+
 $if(has-frontmatter)$
 \frontmatter
 $endif$
