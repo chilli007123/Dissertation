@@ -1078,7 +1078,7 @@ $endif$
         \newlength\q
         \setlength\q{\dimexpr .5\textwidth -2\tabcolsep}
         \begin{tabular}{p{\q}p{\q}}
-            \textbf{Signed:} & \textbf{Date:} $date$
+            \textbf{Signed:} $author$ & \textbf{Date:} $date$
         \end{tabular}
         \label{tab:signed_declaration}
     \end{table}
