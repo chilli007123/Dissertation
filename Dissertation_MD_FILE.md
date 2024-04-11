@@ -480,7 +480,7 @@ For the second part of the experiment, a payload was handcrafted using python an
 |       File | Encoding | Compiled | AV OFF | AV ON | VirusTotal Score |
 | ---------: | -------: | -------- | ------ | ----- | ---------------- |
 | client.exe |     None | True     | True   | True  | 4                |
-\label{tab:custom}
+Table: Results of custom payload \label{tab:custom}
 
 The results of table \ref{tab:custom} are as expected, with the custom payload evading Windows Defender. The scores on VirusTotal are shocking with only four Antivirus products detecting malware, the results produced above clearly indicate that [@kalogranis2018antivirus] was right in the fact that handcrafted payloads will perform better than tool generated payloads. Furthermore with the payload having no encoding and still producing the lowest score yet it further demonstrates the effectiveness of a hand crafted payload. The payload had functions such as, taking pictures on the victims webcam and opening a port on the machine so that the attacker can download any files. As the payload has many functions similar to those in modern day viruses it is strange that behavioural detection techniques didnt pick it up as a virus. Lastly, As the payload used no evasion techniques it ponders the question to whether Windows Defender has sufficient protections against new strains of viruses. 
 
@@ -493,13 +493,14 @@ The results of table \ref{tab:custom} are as expected, with the custom payload e
 Overall, it was very hard to create working payloads with our tools. With producing over 140+ payloads for msfvenom and not a single payload was able to evade Windows Defender. Contradictory to [@aminu2020evaluating] AVET proved ineffective at side-stepping Windows Defender and also failed to generate working payloads; with one temporary exception. AVET had low scores on VirusTotal due to its sandbox evasion techniques but with the ongoing battles between AV and virus developers the results from [@aminu2020evaluating] could not be reproduced with this tool. Lastly, the tool Scarecrow was very effective at defeating Windows Defender with roughly half the tested payloads working. The reason for the success of Scarecrow is likely due to new evasion techniques employed, that tools like Msfvenom and Avet dont have access to. The ability to self sign payloads and obfuscate malicious codes by cloning DLL properties is what made Scarecrow so effective in producing working payloads. The impact of the results above could be detrimental to the security of Windows systems, allowing attackers the ability to quickly deploy and manage RAT viruses on a victims machines. Once the RAT virus runs on the machine other functions and clones will be created, lessening the security of those who use the machine. To prevent this from happening protection mechanisms will need to be put in place to search for fake signing and DLL cloning. 
 
 ## Effectiveness of custom payloads
+
 "With 560,000 new pieces of ransomware being detected each day" [@jovanovic2023malware], Windows Defender should be focussing on new ways to detect malware. Our study showed that Windows Defender was ineffective at detecting custom payloads whereas other antivirus products were able to detect the malicious functions. As this 0-Day payload was never seen before this indicates a problem in the dynamic analysis of Defenders protection mechanisms, improvements will need to be made to the behavioural analysis to monitor core functions of new programs and assess any malicious intentions.
 
 ## Detections Graph
 
-![Detection Rates for AV](Detections.png)
-
 Lastly here is a clear view on the detection rates for the different tools compared to our custom payload. The spike in msfvenom demonstrates the popularity of the tool and therefore mirrors the detections that would be associated with using it.
+
+![Detection Rates for AV](Detections.png)
 
 # Conclusion
 
@@ -519,13 +520,14 @@ To answer the research question, overall I agree that Windows Defender can detec
 
 Over the course of the project, I have updated the Gannt chart to clearly reflect any changes in progroess. Overall the timelines were fairly similar, but the Literature review and the experimentation took longer than expected due to having to find up to date literature and automating mundane tasks such as generating 100's of payloads.
 
-![Updated Gannt Chart](ganntupdated.png)
+![Updated Gannt Chart](betterGANNT.png)
 
 ## Supervision process
 
 Overall the Supervision process was very informative and helpful. Each Week meetings would be setup where students under the same supervisor could go to ask questions and get feedback. Furthermore, there was also time for me to individually setup meetings where I could discuss more project specific questions with my supervisor. The supervision process encouraged me to chip away at my work each week and bring forth questions when needed.
 
 # Legal and Ethical considerations:
+
 ## Legal
 
 Throughout this project I will be researching and developing computer viruses, and therefore bare any responsibility over the programs I create and how they are used. Because legal considerations around Computer Misuse Act (1990) and Civil Liability Laws, all versions of computer virus that are created will be tested locally. This means that we wont address how viruses spread over the internet, but we will dive into how well AV detects them once on a "victims" computer. During this research no data will be lost or destroyed and no person(s) will be affected by my research. 

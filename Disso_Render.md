@@ -29,14 +29,20 @@ header-right: \chaptermark
 
 
 abstract: |
-    This paper aims to evaluate the effectiveness of Windows Defender Protection mechanisms where evasion techniques are used. We discuss the current protection mechanisms in place to detect malicious files, as well as the evasion techniques used to bypass such protections. Through the usage of off-the-shelf tools and custom payloads, the experiment was successful in evading AV. Tools such as AVET and Msfvenom had little success, but Scarecrow was able to defeat Defender through the use of self-signing and Living of The Land techniques. The results highlighted gaps between public tools and 0-Day handcrafted payloads, confirming the severity that custom payloads could impose in the ongoing battle between Virus and Anti-virus developers. With over 560,000 new malware detections each day, understanding the current level to which we are exposed to malicious viruses is crucial.
+    This paper aims to evaluate the effectiveness of Windows Defender Protection mechanisms where evasion techniques are used. We discuss the current protection mechanisms in place to detect malicious files, as well as the evasion techniques used to bypass such protections. Through the usage of off-the-shelf tools and custom code, payloads were generated and placed onto an up-to-date Windows 10 machine and tested against Windows Defender. The experiment was successful in evading AV, tools such as AVET and Msfvenom had little success, but Scarecrow was able to defeat Defender through the use of self-signing and Living of The Land techniques. The results highlighted gaps between public tools and 0-Day handcrafted payloads, confirming the severity that custom payloads could impose in the ongoing battle between Virus and Anti-virus developers. With over 560,000 new malware detections each day, understanding the current level to which we are exposed to malicious viruses is crucial.
     
 dedication: |
     I would like to dedicate this Dissertation to:
     
-    My family and friends for loving and supporting throughout Uni.
+    In loving memory of my Grandad, Braian Graham and my dog Monty who sadly were lost while at University. 
     
-    My Supervisor/mentor, for their invaluable time and knowledge, inspiring me to do great work.
+    Would like to mention my biggest supportes, my parents, who's love and support pushed me through school and guided me to achieve my greatest work, and pick me up when i was down.
+    
+    My Supervisor Dan Goldsmith, for his invaluable time and knowledge, the electric attitude he bought to the classroom always to do great work.
+    
+    Lastly a special thanks to all the friends I met along the way, your love and support never failed to make me smile.
+    
+    
     
     
 
