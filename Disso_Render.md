@@ -36,11 +36,11 @@ dedication: |
     
     In loving memory of my Grandad, Braian Graham and my dog Monty who sadly were lost while at University. 
     
-    Would like to mention my biggest supportes, my parents, who's love and support pushed me through school and guided me to achieve my greatest work, and pick me up when i was down.
+    Would like to mention my biggest supportes, my parents, who's love and support pushed me through school and guided me to achieve my greatest work, and pick me up when I was down.
     
-    My Supervisor Dan Goldsmith, for his invaluable time and knowledge, the electric attitude he bought to the classroom always to do great work.
+    My Supervisor Dan Goldsmith, for his invaluable time and knowledge. University wouldnt of been as fun and engaging without you.
     
-    Lastly a special thanks to all the friends I met along the way, your love and support never failed to make me smile.
+    Lastly a special thanks to all the friends I met along the way.
     
     
     
