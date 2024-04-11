@@ -34,9 +34,9 @@ abstract: |
 dedication: |
     I would like to dedicate this Dissertation to:
     
-    In loving memory of my Grandad, Braian Graham and my dog Monty who sadly were lost while at University. 
+    In loving memory of my Grandad, Brian Graham.
     
-    Would like to mention my biggest supportes, my parents, who's love and support pushed me through school and guided me to achieve my greatest work, and pick me up when I was down.
+    My parents, who's love and support enabled me to achieve great work, and guide me throughout University.
     
     My Supervisor Dan Goldsmith, for his invaluable time and knowledge. University wouldnt of been as fun and engaging without you.
     
